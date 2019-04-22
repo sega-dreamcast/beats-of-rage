@@ -8,6 +8,7 @@
 #include <string.h>
 
 #include "dcport.h"
+#include "dcpad.h"
 #include "dcvga.h"
 
 #include "types.h"
@@ -3022,6 +3023,7 @@ void player_die(){
 	self->health = self->maxhealth;
 	ent_set_anim(self, ANI_JUMP);
 	self->think = player_jump;
+	dcpad_rumblepower[self->playerindex]=125;
 	drop_all_enemies();
 	timeleft = 100 * COUNTER_SPEED;
 }
@@ -3217,6 +3219,7 @@ void player_fall(void){
 		make_quake(2);
 		sound_play_sample(smp_fall, 0, savedata.effectvol,savedata.effectvol, 100);
 		toss(self, 1);
+		dcpad_rumblepower[self->playerindex] = 100;
 		return;
 	}
 
@@ -3603,6 +3606,9 @@ void player_takedamage(entity *other, int force, int drop, int type){
 
 	if(other->type==TYPE_PLAYER) force /= 2;
 	self->health -= force;
+	
+	// -- Rumble DreamCast Pad -- 
+	dcpad_rumblepower[self->playerindex] = force * 3;
 
 	if(type == ATK_BLAST){
 		self->projectile = 1;
@@ -3614,6 +3620,7 @@ void player_takedamage(entity *other, int force, int drop, int type){
 		ent_reset_anim(self, ANI_FALL);
 		self->damage_on_landing = 0;
 		self->think = player_fall;
+		dcpad_rumblepower[self->playerindex] *= 2;
 		return;
 	}
 
@@ -4337,6 +4344,7 @@ void enemy_fall(void){
 		make_quake(2);
 		sound_play_sample(smp_fall, 0, savedata.effectvol,savedata.effectvol, 100);
 		toss(self, 1);
+		dcpad_rumblepower[0]=dcpad_rumblepower[1]=75;
 		return;
 	}
 
@@ -4419,6 +4427,7 @@ void enemy_takedamage(entity *other, int force, int drop, int type){
 		player[other->playerindex].opponent = self;
 		self->playerindex = other->playerindex;
 		addscore(other->playerindex, force*5);
+		dcpad_rumblepower[other->playerindex] = force*2;
 	}
 
 	if(self->health <= 0){
@@ -4491,6 +4500,7 @@ void bike_crash(void){
 	if(self->direction) self->x += 2;
 	else self->x -= 2;
 	self->nextthink = bortime + THINK_SPEED / 2;
+	dcpad_rumblepower[0] = dcpad_rumblepower[1] = 100;
 
 	if(self->x < advancex-100 || self->x > advancex+420) borkill(self);
 }
@@ -4506,6 +4516,7 @@ void biker_takedamage(entity *other, int force, int drop, int type){
 		player[other->playerindex].opponent = self;
 		self->playerindex = other->playerindex;
 		addscore(other->playerindex, force);
+		dcpad_rumblepower[other->playerindex] = force*2;
 	}
 
 
@@ -4561,7 +4572,11 @@ void obstacle_takedamage(entity *other, int force, int unused1, int unused2){
 		borkill(self);
 		return;
 	}
-	if(other->type==TYPE_PLAYER) player[other->playerindex].opponent = self;
+	if(other->type==TYPE_PLAYER)
+	{
+	  player[other->playerindex].opponent = self;
+	  dcpad_rumblepower[other->playerindex] = 75;
+	}
 	self->health -= force;
 	if(self->health<=0){
 		if(self->model->diesound>=0) sound_play_sample(self->model->diesound, 0, savedata.effectvol,savedata.effectvol, 100);

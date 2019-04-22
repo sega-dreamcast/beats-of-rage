@@ -187,6 +187,13 @@ void dcvga_force_enable(void) {
 }
 
 /////////////////////////////////////////////////////////////////////////////
+#ifndef PAL
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// set video mode NTSC (60Hz) 320x240x32bpp 
+//
+/////////////////////////////////////////////////////////////////////////////
 
 static void video_setmode(void) {
   int cabletype = video_check_cable();
@@ -221,6 +228,50 @@ static void video_setmode(void) {
 
   video_set_cable(cabletype);
 }
+
+#else
+/////////////////////////////////////////////////////////////////////////////
+//
+// set video mode PAL(50Hz) 320x240x32bpp 
+//
+/////////////////////////////////////////////////////////////////////////////
+
+
+static void video_setmode(void) {
+	int cabletype = video_check_cable();
+	int vga = (cabletype == VIDEO_CABLE_VGA);
+	
+	{ unsigned data = (VIDEO_PIXELMODE_RGB888 << 2);
+    if(vga) {
+		data |= VIDREG_FB_CFG1_clock;
+		data |= VIDREG_FB_CFG1_linedouble;
+    }
+    VIDREG_FB_CFG1 = data;
+	}
+	
+	VIDREG_DISPLAY_SIZE =
+		((240 - 1) <<  0) |
+		((240 - 1) << 10) |
+		(1 << 20);
+	
+	VIDREG_SYNC_CFG = VIDREG_SYNC_CFG_enable;
+	
+	VIDREG_VPOS_IRQ = ((21 << 16) | 260) << (vga?1:0);
+	
+	VIDREG_HBORDER   = (141 << 16) | 843;
+	VIDREG_VBORDER   = ((44 << 16) | 620) << (vga?1:0);
+	
+	VIDREG_SYNC_LOAD = (312 << (vga?17:16)) | 863;
+	
+	VIDREG_HPOS = 174;
+	VIDREG_VPOS = ((46<<16)|45) << (vga?1:0);
+	
+	VIDREG_VIDEO_CFG |=  VIDREG_VIDEO_CFG_lores;
+	
+	video_set_cable(cabletype);
+}
+#endif // PAL or NTSC
+
 
 /////////////////////////////////////////////////////////////////////////////
 

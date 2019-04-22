@@ -21,12 +21,15 @@
 #define MAPLE_SPEED_TIMEOUT(n) ((n) << 16)
 
 #define MAPLE_FUNC_CONTROLLER (0x01000000)
+#define MAPLE_FUNC_PURUPURU   (0x00010000)
+
 
 /////////////////////////////////////////////////////////////////////////////
 
 static volatile char dcpad_controller_attached[4] = {0,0,0,0};
 volatile unsigned dcpad_buttonstate0[4] = {0,0,0,0};
 volatile unsigned dcpad_buttonstate1[4] = {0,0,0,0};
+volatile unsigned int dcpad_rumblepower[4] = {0,0,0,0};
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -36,6 +39,19 @@ static volatile unsigned *dcpad_msend;
 static volatile unsigned *dcpad_mrecv[4];
 
 static int dcpad_ready_to_poll = 0;
+
+unsigned char maple_addr(int port, int unit) {
+	unsigned char addr;
+
+	
+	addr = port << 6;
+	if (unit != 0)
+		addr |= (1 << (unit - 1)) & 0x1f;
+	else
+		addr |= 0x20;
+
+	return addr;
+}
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -88,9 +104,28 @@ void dcpad_poll(void) {
     dcpad_msend[ofs++] = ((unsigned)dcpad_mrecv[port]) & 0x1FFFFFFF;
     dcpad_msend[ofs++] = 0x01002000 | (port << 14) | cmd;
     dcpad_msend[ofs++] = MAPLE_FUNC_CONTROLLER;
+    //purupuru  
+    cmd = 14;
+    dcpad_msend[ofs++] = 0x00000002 | (port << 16) | (port == 3 ? 0x80000000 : 0);
+    dcpad_msend[ofs++] = ((unsigned)dcpad_mrecv[2]) & 0x1FFFFFFF;
+    dcpad_msend[ofs++] = 0x02000000 | ((port << 6) << 16) | (maple_addr(port, 2) << 8) | cmd;
+    dcpad_msend[ofs++] = MAPLE_FUNC_PURUPURU;
+    if(dcpad_rumblepower[port] >1)
+    {
+    	dcpad_msend[ofs++] = RUMBLE_STRONG_VALUE;
+    	dcpad_rumblepower[port]--;
+    }
+    else if(dcpad_rumblepower[port] == 1)
+    {
+    	dcpad_msend[ofs++] = RUMBLE_SHUTDOWN_VALUE;
+    	dcpad_rumblepower[port]--;
+    }
+    else
+    	dcpad_msend[ofs++] = 0x00000000;
+    	
     dcpad_mrecv[port][0] = 0xFFFFFFFF;
   }
-
+  
   MAPLEREG_DMAADDR = ((unsigned)dcpad_msend) & 0x1FFFFFFF;
   MAPLEREG_STATE = 1;
 }
@@ -106,7 +141,7 @@ void dcpad_init(void) {
   MAPLEREG_ENABLE = 1;
   // set up pointers
   t = (unsigned*)((((unsigned)dcpad_dmabuffer)|0xA000001F)+1);
-  dcpad_msend = t; t += 16;
+  dcpad_msend = t; t += 64;
   dcpad_mrecv[0] = t; t += 256;
   dcpad_mrecv[1] = t; t += 256;
   dcpad_mrecv[2] = t; t += 256;
