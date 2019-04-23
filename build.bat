@@ -30,8 +30,8 @@ if not exist %BORDATA% goto make_data
 goto finalize
 
 :make_data
-cd ..
-%BORPAK% -d %SCRIPT_PATH%\data -b %BORDATA%
+cd ../..
+%BORPAK% -d data -b %BORDATA%
 goto finalize
 
 :finalize
