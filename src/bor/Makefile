@@ -1,24 +1,20 @@
-SH4PATH=/usr/local/dc/sh-elf/bin
+SDKPATH=../../sdk
+SH4PATH=$(SDKPATH)/sh-elf/bin
 
 CC=$(SH4PATH)/sh-elf-gcc -ml -m4-single-only -ffast-math
 AS=$(SH4PATH)/sh-elf-as -little
 OBJCOPY=$(SH4PATH)/sh-elf-objcopy
 
-CFLAGS=-Wall -Werror -O9 -fomit-frame-pointer -fno-ident -freorder-blocks -funsigned-char
+PAD32=$(SDKPATH)/opt/pad32
+RM=$(SDKPATH)/bin/rm
 
-#########################
-#
-# BUILD NTSC MASTER 
-#
-########################
-CFLAGS+=-DNTSC
+CFLAGS=-Wall -Werror -O9 -fomit-frame-pointer -fno-ident -freorder-blocks -funsigned-char -I$(SH4PATH)/../include -I$(SH4PATH)/../sh-elf/include
 
-#########################
-#
-# OR PAL MASTER 
-#
-########################
-# CFLAGS+=-DPAL
+ifdef PAL
+  CFLAGS+=-DPAL
+else
+  CFLAGS+=-DNTSC
+endif
 
 LFLAGS=-Wl,-T,dc.x,-Map,linkmap -nostdlib
 LIBS=-lc -lgcc
@@ -42,12 +38,12 @@ OBJECTS=crt0.o dcport.o dcloadsc.o dcmath.o syscalls.o bios.o gdrom.o \
 %.cs: %.c
 	$(CC) $(CFLAGS) -S -c $< -o $@
 
-1ST_READ.elf: $(OBJECTS)
+bor.elf: $(OBJECTS)
 	$(CC) $(LFLAGS) $(OBJECTS) -o $@ $(LIBS)
 
-1ST_READ.BIN: 1ST_READ.elf
+1ST_READ.BIN: bor.elf
 	$(OBJCOPY) -S -R .stack --gap-fill 0 -O binary $< $@
-	pad32 1ST_READ.BIN
+	$(PAD32) 1ST_READ.BIN
 
 clean:
-	rm *.o *.elf *.cs linkmap 1ST_READ.BIN
+	$(RM) -f *.o *.elf *.cs linkmap

@@ -5206,13 +5206,16 @@ void shutdown(char *msg, ...){
 	exit(0);
 }
 
-
-
+#ifdef PAL
+#define BROADCAST_FLAVOR "PAL"
+#else
+#define BROADCAST_FLAVOR "NTSC"
+#endif
 
 void startup(){
 	int i;
 
-	printf("Beats of Rage V%X.%04X, compile date: " __DATE__ "\n\n", VERSION>>16, VERSION&0xFFFF);
+	printf("Beats of Rage Rumble Edition V%X.%04X, compile date: " __DATE__ ", broadcast flavor: %s\n\n", VERSION>>16, VERSION&0xFFFF, BROADCAST_FLAVOR);
 
 	loadsettings();
 
