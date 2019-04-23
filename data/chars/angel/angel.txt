@@ -1,0 +1,130 @@
+name	Angel
+diesound data/sounds/eek.wav
+health	60
+speed	9
+type	enemy
+shadow	3
+icon	data/chars/angel/icon.gif
+
+remap	data/chars/angel/idle1.gif data/chars/angel/alt1.gif
+remap	data/chars/angel/idle1.gif data/chars/angel/alt2.gif
+remap	data/chars/angel/idle1.gif data/chars/angel/alt3.gif
+remap	data/chars/angel/idle1.gif data/chars/angel/alt4.gif
+remap	data/chars/angel/idle1.gif data/chars/angel/alt5.gif
+
+
+anim idle
+	loop	1
+	offset	31 116
+	bbox	18 10 28 106
+	delay	10
+	frame	data/chars/angel/idle1.gif
+	frame	data/chars/angel/idle2.gif
+	frame	data/chars/angel/idle3.gif
+	frame	data/chars/angel/idle4.gif
+	frame	data/chars/angel/idle5.gif
+	frame	data/chars/angel/idle6.gif
+	frame	data/chars/angel/idle7.gif
+	frame	data/chars/angel/idle8.gif
+
+anim walk
+	loop	1
+	offset	41 107
+	bbox	36 5 20 103
+	delay	10
+	frame	data/chars/angel/walk01.gif
+	frame	data/chars/angel/walk02.gif
+	frame	data/chars/angel/walk03.gif
+	frame	data/chars/angel/walk04.gif
+	frame	data/chars/angel/walk05.gif
+	frame	data/chars/angel/walk06.gif
+	frame	data/chars/angel/walk07.gif
+	frame	data/chars/angel/walk08.gif
+	frame	data/chars/angel/walk09.gif
+	frame	data/chars/angel/walk10.gif
+	frame	data/chars/angel/walk11.gif
+
+anim pain
+	loop	0
+	offset	44 108
+	bbox	27 3 30 107
+	delay	12
+	frame	data/chars/angel/pain1.gif
+	delay	50
+	frame	data/chars/angel/pain2.gif
+	delay	12
+	frame	data/chars/angel/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	56 105
+	attack	41 18 34 84 12 1
+	frame	data/chars/angel/fall1.gif
+	attack	30 43 59 38 12 1
+	frame	data/chars/angel/fall2.gif
+	attack	19 67 94 20 12 1
+	frame	data/chars/angel/fall3.gif
+	attack	17 83 94 20 12 1
+	frame	data/chars/angel/fall4.gif
+
+anim rise
+	loop	0
+	offset	36 99
+	delay	15
+	frame	data/chars/angel/rise1.gif
+	frame	data/chars/angel/rise2.gif
+	frame	data/chars/angel/rise3.gif
+	frame	data/chars/angel/rise4.gif
+
+anim attack1
+	range	20 90
+	loop	0
+	delay	4
+	offset	48 125
+	bbox	34 30 30 95
+	frame	data/chars/angel/duck1.gif
+	bbox	34 51 30 74
+	frame	data/chars/angel/duck2.gif
+	bbox	34 62 30 63
+	frame	data/chars/angel/duck3.gif
+
+	frame	data/chars/angel/sweep01.gif
+	bbox	34 64 30 61
+	frame	data/chars/angel/sweep02.gif
+	bbox	34 76 30 49
+	frame	data/chars/angel/sweep03.gif
+	frame	data/chars/angel/sweep04.gif
+	attack	60 93 54 26 15 1
+	frame	data/chars/angel/sweep05.gif
+	attack	60 93 62 26 15 1
+	frame	data/chars/angel/sweep06.gif
+	attack	60 93 64 26 15 1
+	frame	data/chars/angel/sweep07.gif
+	attack	60 93 70 26 15 1
+	frame	data/chars/angel/sweep08.gif
+	attack	0
+	frame	data/chars/angel/sweep09.gif
+	frame	data/chars/angel/sweep10.gif
+	frame	data/chars/angel/sweep11.gif
+	frame	data/chars/angel/sweep12.gif
+	delay	6
+	bbox	34 62 30 63
+	frame	data/chars/angel/duck3.gif
+	bbox	34 51 30 74
+	frame	data/chars/angel/duck2.gif
+	bbox	34 30 30 95
+	frame	data/chars/angel/duck1.gif
+
+anim throw
+	loop	0
+	offset	42 81
+	delay	10
+	sound	data/sounds/leonahey.wav
+	frame	data/chars/angel/throw1.gif
+	frame	data/chars/angel/throw2.gif
+	frame	data/chars/angel/throw3.gif
+	frame	data/chars/angel/throw4.gif
+	frame	data/chars/angel/throw5.gif
+	frame	data/chars/angel/throw6.gif

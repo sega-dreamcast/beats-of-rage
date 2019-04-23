@@ -1,0 +1,6 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+
+animation	data/scenes/senile.gif 0 0

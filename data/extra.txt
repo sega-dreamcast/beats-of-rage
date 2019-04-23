@@ -1,0 +1,981 @@
+# Shrine
+music		data/music/fsol.bor
+bossmusic	data/music/1boss.bor
+#rock		1
+
+background	data/bgs/shrine/back.gif
+
+panel		data/bgs/shrine/p00.gif
+panel		data/bgs/shrine/p01.gif
+panel		data/bgs/shrine/p02.gif
+panel		data/bgs/shrine/p03.gif
+panel		data/bgs/shrine/p04.gif
+panel		data/bgs/shrine/p05.gif
+panel		data/bgs/shrine/p06.gif
+panel		data/bgs/shrine/p07.gif
+panel		data/bgs/shrine/p08.gif
+panel		data/bgs/shrine/p09.gif
+
+order		abcdefghijabcdefghijabcdefghij
+order		abcdefghijabcdefghijabcdefghij
+
+# ---------------------
+
+group	7 7
+at	0
+
+wait
+at	20
+
+spawn	Yashiro
+coords	370 160
+health	10
+at	10
+
+spawn	Yashiro
+coords	360 165
+map	1
+health	10
+at	10
+
+spawn	Yashiro
+coords	380 170
+map	2
+health	10
+at	10
+
+spawn	Yashiro
+coords	380 175
+map	3
+health	10
+at	10
+
+spawn	Yashiro
+coords	370 180
+health	10
+at	10
+
+spawn	K'
+coords	200 190
+health	10
+at	10
+
+spawn	K'
+coords	200 195
+health	10
+at	10
+
+spawn	K'
+coords	200 200
+map	1
+health	10
+at	10
+
+spawn	K'
+coords	200 210
+health	10
+at	10
+
+spawn	K'
+coords	200 170
+map	1
+health	10
+at	10
+
+spawn	Yashiro
+coords	370 215
+map	1
+health	10
+at	10
+
+spawn	Yashiro
+coords	370 220
+map	2
+health	10
+at	10
+
+spawn	Yashiro
+coords	370 225
+map	3
+health	10
+at	10
+
+spawn	K'
+coords	200 210
+health	10
+at	10
+
+spawn	K'
+coords	200 160
+health	10
+at	10
+
+spawn	Yashiro
+coords	370 230
+health	10
+at	10
+
+spawn	Yashiro
+coords	220 170
+map	1
+health	10
+at	10
+
+spawn	Yashiro
+coords	250 195
+map	2
+health	10
+at	10
+
+#--------------------
+group	100 100
+at	200
+
+spawn	Joe
+alias	Cuckoo
+health	100
+coords	370 195
+at	200
+
+spawn	Joe
+alias	Thrush
+map	1
+health	100
+coords	-30 195
+at	200
+
+spawn	Joe
+alias	Snipe
+map	2
+health	100
+coords	-30 230
+at	200
+
+spawn	Crab
+coords	380 160
+at	200
+
+spawn	Angel
+map	2
+health	100
+coords	370 170
+at	200
+
+spawn	Angel
+map	4
+health	100
+coords	370 230
+at	200
+
+spawn	Crab
+coords	380 170
+at	500
+
+wait
+at	600
+
+group	1 1
+at	600
+
+group	4 4
+at	600
+
+spawn	Crab
+coords	380 190
+at	600
+
+spawn	eiji
+alias	Jubei
+coords	370 230
+map	4
+health	100
+at	600
+
+spawn	Biker-K'
+health	10
+coords	400 215
+at	600
+
+spawn	Biker-K'
+health	100
+map	1
+coords	400 195
+at	600
+
+spawn	Biker-K'
+health	10
+coords	-80 165
+at	600
+
+spawn	eiji
+alias	Hanzo
+map	6
+health	100
+coords	370 230
+at	600
+
+spawn	Biker-K'
+health	10
+coords	-80 165
+at	600
+
+#-----------------
+group	100 100
+at	600
+
+spawn	Drum
+item	apple
+coords	370 190
+at	610
+
+spawn	Crab
+coords	-30 220
+at	650
+
+spawn	Heavy
+health	60
+coords	40 170
+at	700
+
+spawn	Heavy
+alias	George_Forearm
+health	60
+coords	200 230
+at	700
+
+spawn	Heavy
+map	1
+health	60
+coords	300 180
+at	700
+
+spawn	Crab
+coords	-30 210
+at	900
+
+spawn	Shermie
+map	1
+health	60
+coords	380 180
+at	1000
+
+spawn	Billy
+map	3
+health	100
+coords	300 200
+at	1000
+
+spawn	Angel
+map	1
+health	100
+coords	-30 160
+at	1000
+
+spawn	Angel
+map	2
+health	120
+coords	-30 230
+at	1000
+
+
+wait
+at	1300
+
+group	1 1
+at	1300
+
+group	100 100
+at	1300
+
+spawn	Robert
+map	1
+health	90
+coords	380 180
+at	1300
+
+spawn	Robert
+health	90
+coords	-30 180
+at	1300
+
+spawn	K9999
+map	1
+health	150
+coords	380 220
+at	1300
+
+spawn	K9999
+health	150
+coords	-30 220
+at	1300
+
+#----------------
+group	7 7
+at	1310
+
+spawn	Drum
+item	meat
+coords	380 220
+at	1330
+
+spawn	Eiji
+alias	Ninja
+map	5
+health	100
+coords	40 230
+at	1410
+
+spawn	K'
+map	1
+health	10
+coords	70 160
+at	1410
+
+spawn	K'
+health	10
+coords	70 190
+at	1410
+
+spawn	Yashiro
+map	1
+health	10
+coords	100 200
+at	1410
+
+spawn	Yashiro
+map	2
+health	10
+coords	150 210
+at	1410
+
+spawn	Angel
+map	3
+health	70
+coords	200 230
+at	1410
+
+wait
+at	1500
+
+spawn	Yashiro
+map	3
+health	10
+coords	30 160
+at	1410
+
+spawn	Yashiro
+health	10
+coords	100 180
+at	1410
+
+spawn	K'
+health	10
+coords	10 220
+at	1410
+
+spawn	K'
+health	10
+coords	240 195
+at	1410
+
+spawn	K'
+health	10
+coords	300 190
+at	1410
+
+spawn	Yashiro
+health	10
+map	2
+coords	310 210
+at	1410
+
+spawn	Yashiro
+health	10
+map	3
+coords	380 230
+at	1410
+
+spawn	K'
+health	10
+map	1
+coords	10 170
+at	1410
+
+
+#---------------
+
+group	100 100
+at	1510
+
+spawn	Crab
+coords	380 160
+at	1530
+
+spawn	Crab
+coords	380 195
+at	1540
+
+spawn	Crab
+coords	380 165
+at	1540
+
+spawn	Crab
+coords	400 170
+at	1540
+
+spawn	Crab
+coords	380 180
+at	1540
+
+spawn	Crab
+coords	410 190
+at	1540
+
+spawn	Crab
+coords	400 200
+at	1540
+
+spawn	Crab
+coords	380 210
+at	1540
+
+
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+coords	380 160
+at	1560
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+coords	380 210
+at	1560
+
+spawn	Lobster
+alias	Mutant_Crab
+health	70
+map	2
+coords	-30 195
+at	1560
+
+
+spawn	Lobster
+alias	Mutant_Crab
+health	100
+coords	380 170
+at	1900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	100
+map	3
+coords	-30 220
+at	1900
+
+spawn	K'
+health	10
+coords	310 210
+at	1900
+
+spawn	K'
+health	10
+coords	20 160
+at	1900
+
+spawn	K'
+health	10
+map	1
+coords	380 180
+at	1900
+
+spawn	K'
+health	10
+coords	-30 230
+at	1900
+
+spawn	K'
+health	10
+coords	-30 210
+at	1900
+
+
+spawn	Crab
+coords	-30 195
+at	2000
+
+
+spawn	drum
+item	meat
+coords	380 180
+at	2100
+
+spawn	Yamazaki
+health	70
+coords	380 210
+at	2200
+
+spawn	Yamazaki
+health	70
+map	1
+coords	-30 160
+at	2200
+
+spawn	Lobster
+alias	Mutant_Crab
+health	90
+coords	380 230
+at	2200
+
+wait
+at	2220
+
+#--------------------
+
+
+spawn	Lobster
+alias	Mutant_Crab
+map	1
+health	90
+coords	380 230
+at	2300
+
+spawn	Crab
+coords	380 160
+at	2300
+
+spawn	Lobster
+alias	Mutant_Crab
+map	3
+health	90
+coords	200 210
+at	2300
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+coords	-30 190
+at	2300
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+map	4
+coords	380 210
+at	2300
+
+
+
+wait
+at	2700
+
+group	4 4
+at	2700
+
+spawn	Lobster
+alias	Mutant_Crab
+health	90
+coords	380 210
+at	2700
+
+spawn	Lobster
+alias	Mutant_Crab
+health	90
+map	1
+coords	380 160
+at	2700
+
+spawn	Eiji
+health	80
+alias	Ukyo
+map	3
+coords	60 180
+at	2700
+
+spawn	Eiji
+health	80
+alias	Zanza
+map	2
+coords	200 230
+at	2700
+
+spawn	lobster
+alias	Mutant_Crab
+health	100
+map	4
+coords	-30 190
+at	2700
+
+spawn	Joe
+health	90
+alias	Fedder
+coords	380 220
+at	2700
+#--------------------
+
+spawn	Crab
+coords	380 160
+at	2760
+
+spawn	Crab
+coords	400 170
+at	2760
+
+spawn	Crab
+coords	380 180
+at	2760
+
+spawn	Crab
+coords	410 190
+at	2760
+
+spawn	Crab
+coords	400 200
+at	2760
+
+spawn	Crab
+coords	380 210
+at	2760
+
+spawn	Crab
+coords	450 220
+at	2760
+
+spawn	Crab
+coords	380 230
+at	2760
+
+spawn	Crab
+coords	410 160
+at	2760
+
+spawn	Crab
+coords	370 215
+at	2760
+
+spawn	Crab
+coords	375 168
+at	2760
+
+spawn	Crab
+coords	460 194
+at	2760
+
+spawn	Crab
+coords	390 224
+at	2760
+
+spawn	Crab
+coords	430 160
+at	2760
+
+spawn	Crab
+coords	384 182
+at	2760
+
+spawn	Crab
+coords	480 192
+at	2760
+
+spawn	Crab
+coords	370 164
+at	2760
+
+spawn	Crab
+coords	420 175
+at	2760
+
+spawn	Crab
+coords	460 183
+at	2760
+
+spawn	Crab
+coords	410 197
+at	2760
+
+spawn	Crab
+coords	450 208
+at	2760
+
+spawn	Crab
+coords	430 214
+at	2760
+
+spawn	Crab
+coords	470 226
+at	2760
+
+spawn	Crab
+coords	446 236
+at	2760
+
+spawn	Crab
+coords	421 160
+at	2760
+
+spawn	Crab
+coords	436 215
+at	2760
+
+spawn	Crab
+coords	475 168
+at	2760
+
+spawn	Crab
+coords	468 194
+at	2760
+
+spawn	Crab
+coords	459 224
+at	2760
+
+spawn	Crab
+coords	472 160
+at	2760
+
+spawn	Crab
+coords	449 182
+at	2760
+
+spawn	Crab
+coords	468 192
+at	2760
+
+
+
+
+
+
+spawn	Crab
+coords	-39 195
+at	2760
+
+
+#-----------boss--------
+group	5 5
+at	2900
+
+spawn	Drum
+item	meat
+coords	370 180
+at	2900
+
+spawn	Drum
+2pitem	apple
+coords	400 170
+at	2900
+
+wait
+at	3100
+
+spawn	Lobster
+alias	Dr_Tor
+map	1
+health	200
+coords	370 160
+at	3100
+
+spawn	Lobster
+alias	King_Crab
+map	5
+boss	1
+health	400
+coords	380 230
+at	2900
+
+#--reinforcements------
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+coords	-30 200
+at	2900
+
+spawn	Eiji
+alias	Silver
+map	1
+health	80
+coords	-30 230
+at	2900
+
+spawn	K'
+health	70
+coords	380 170
+at	2900
+
+spawn	Shermie
+health	60
+map	1
+coords	-30 200
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+coords	-30 190
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+map	2
+coords	380 220
+at	2900
+
+spawn	Angel
+health	80
+coords	200 200
+at	2900
+
+spawn	K'
+health	70
+coords	-30 180
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+map	1
+coords	380 230
+at	2900
+
+spawn	crab
+coords	-30 200
+at	2900
+
+spawn	Yashiro
+health	75
+coords	100 220
+at	2900
+
+spawn	Eiji
+health	80
+coords	300 160
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+map	3
+coords	-30 195
+at	2900
+
+spawn	K'
+health	70
+coords	160 200
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	90
+map	4
+coords	380 180
+at	2900
+
+spawn	Robert
+health	80
+map	1
+coords	200 170
+at	2900
+
+spawn	Angel
+health	90
+coords	-30 210
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+coords	-30 200
+at	2900
+
+spawn	Eiji
+alias	Silver
+map	1
+health	80
+coords	-30 230
+at	2900
+
+spawn	K'
+health	70
+coords	380 170
+at	2900
+
+spawn	Shermie
+health	60
+map	1
+coords	-30 200
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+map	1
+coords	-30 190
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+coords	380 220
+at	2900
+
+spawn	Angel
+health	80
+coords	200 200
+at	2900
+
+spawn	K'
+health	70
+coords	-30 180
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+map	1
+coords	380 230
+at	2900
+
+spawn	crab
+coords	-30 200
+at	2900
+
+spawn	Yashiro
+health	75
+coords	100 220
+at	2900
+
+spawn	Eiji
+health	80
+coords	300 160
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	80
+map	3
+coords	-30 195
+at	2900
+
+spawn	K'
+health	70
+coords	160 200
+at	2900
+
+spawn	Lobster
+alias	Mutant_Crab
+health	90
+coords	380 180
+at	2900
+
+spawn	Robert
+health	80
+map	1
+coords	200 170
+at	2900
+
+spawn	Angel
+health	90
+coords	-30 210
+at	2900
+
+

@@ -1,0 +1,12 @@
+name	Time
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/timeicon.gif
+
+anim idle
+	loop	0
+	delay	1000
+	offset	9 16
+	bbox	0 0 17 17
+	frame	data/chars/misc/time.gif

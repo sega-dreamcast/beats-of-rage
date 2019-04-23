@@ -1,0 +1,214 @@
+name	Yamazaki
+health	300
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/yamazaki/icon.gif
+diesound data/sounds/die2.wav
+
+remap	data/chars/yamazaki/idle00.gif data/chars/yamazaki/alt1.gif
+
+
+anim idle
+	loop	1
+	offset	34 128
+	bbox	23 10 32 120
+	delay	12
+	frame	data/chars/yamazaki/idle00.gif
+	frame	data/chars/yamazaki/idle01.gif
+	frame	data/chars/yamazaki/idle02.gif
+	frame	data/chars/yamazaki/idle03.gif
+	frame	data/chars/yamazaki/idle04.gif
+	frame	data/chars/yamazaki/idle05.gif
+
+anim walk
+	loop	1
+	offset	36 131
+	bbox	27 12 22 119
+	delay	10
+	frame	data/chars/yamazaki/walk00.gif
+	frame	data/chars/yamazaki/walk01.gif
+	frame	data/chars/yamazaki/walk02.gif
+	frame	data/chars/yamazaki/walk03.gif
+	frame	data/chars/yamazaki/walk04.gif
+	frame	data/chars/yamazaki/walk05.gif
+	frame	data/chars/yamazaki/walk06.gif
+	frame	data/chars/yamazaki/walk07.gif
+
+anim pain
+	loop	0
+	offset	57 127
+	bbox	32 10 27 118
+	delay	8
+	frame	data/chars/yamazaki/pain00.gif
+	delay	30
+	frame	data/chars/yamazaki/pain01.gif
+	delay	8
+	frame	data/chars/yamazaki/pain00.gif
+
+anim fall
+	loop	0
+	delay	10
+	offset	72 86
+	attack	45 11 46 51 15 1
+	frame	data/chars/yamazaki/fall00.gif
+	attack	30 39 91 31 15 1
+	frame	data/chars/yamazaki/fall01.gif
+	attack	23 59 103 24 15 1
+	frame	data/chars/yamazaki/fall02.gif
+	attack	18 67 110 20 15 1
+	frame	data/chars/yamazaki/fall03.gif
+
+anim rise
+	loop	0
+	offset	45 113
+	delay	20
+	frame	data/chars/yamazaki/rise00.gif
+	frame	data/chars/yamazaki/rise01.gif
+	frame	data/chars/yamazaki/rise02.gif
+
+
+anim attack1
+	range	10 70
+	loop	0
+	delay	8
+	offset	52 124
+	bbox	28 7 28 117
+	frame	data/chars/yamazaki/at1-000.gif
+	bbox	17 9 28 115
+	frame	data/chars/yamazaki/at1-001.gif
+	frame	data/chars/yamazaki/at1-002.gif
+	frame	data/chars/yamazaki/at1-003.gif
+	bbox	68 37 40 87
+	attack	94 31 27 41 20 1
+	frame	data/chars/yamazaki/at1-004.gif
+	bbox	76 32 35 91
+	attack	104 31 27 41 20 1
+	frame	data/chars/yamazaki/at1-005.gif
+	bbox	76 24 34 99
+	attack	0 0 0 0 0
+	frame	data/chars/yamazaki/at1-006.gif
+	bbox	54 15 35 107
+	frame	data/chars/yamazaki/at1-007.gif
+	bbox	40 8 32 114
+	frame	data/chars/yamazaki/at1-008.gif
+
+
+anim attack2
+	range	20 110
+
+	loop	0
+	delay	6
+	offset	67 122
+	bbox	51 6 35 120
+	frame	data/chars/yamazaki/knife00.gif
+
+	bbox	55 11 35 115
+	move	3
+	offset	70 122
+	frame	data/chars/yamazaki/knife01.gif
+
+	bbox	63 19 35 107
+	move	4
+	offset	74 122
+	frame	data/chars/yamazaki/knife02.gif
+
+	bbox	73 19 35 107
+	move	10
+	offset	84 122
+	frame	data/chars/yamazaki/knife03.gif
+
+	bbox	77 25 35 101
+	move	8
+	offset	92 122
+	attack	91 36 53 29 12
+	frame	data/chars/yamazaki/knife04.gif
+
+	bbox	84 32 37 94
+	move	8
+	offset	100 122
+	attack	0 0 0 0 0
+	frame	data/chars/yamazaki/knife05.gif
+
+	bbox	90 37 37 89
+	move	8
+	offset	108 122
+	frame	data/chars/yamazaki/knife06.gif
+
+	bbox	85 33 36 91
+	move	-12
+	offset	96 122
+	frame	data/chars/yamazaki/knife07.gif
+
+	bbox	77 31 36 93
+	move	-6
+	offset	90 122
+	attack	108 37 50 15 12 1
+	frame	data/chars/yamazaki/knife08.gif
+
+	bbox	73 23 37 102
+	move	0
+	attack	43 32 97 17 12 1
+	frame	data/chars/yamazaki/knife09.gif
+
+	attack	2 27 76 14 12 1
+	frame	data/chars/yamazaki/knife10.gif
+
+	bbox	67 23 37 102
+	attack	0 0 0 0 0
+	frame	data/chars/yamazaki/knife11.gif
+
+	bbox	75 23 37 102
+	frame	data/chars/yamazaki/knife12.gif
+
+	bbox	84 15 38 109
+	move	10
+	offset	100 122
+	frame	data/chars/yamazaki/knife13.gif
+
+	bbox	91 7 34 116
+	move	6
+	offset	106 122
+	frame	data/chars/yamazaki/knife14.gif
+	move	0
+	frame	data/chars/yamazaki/knife15.gif
+	frame	data/chars/yamazaki/knife16.gif
+	frame	data/chars/yamazaki/knife17.gif
+
+
+
+anim attack3
+	range	45 185
+	loop	0
+	delay	3
+	offset	30 122
+	bbox	18 13 42 107
+	sound	data/sounds/shaah.wav
+	frame	data/chars/yamazaki/slash00.gif
+	frame	data/chars/yamazaki/slash01.gif
+	bbox	36 5 36 118
+	attack	68 13 72 60 7 1
+	frame	data/chars/yamazaki/slash02.gif
+	frame	data/chars/yamazaki/slash03.gif
+	attack	68 9 137 38 7 1
+	frame	data/chars/yamazaki/slash04.gif
+	frame	data/chars/yamazaki/slash05.gif
+	attack	71 7 97 35 7 1
+	frame	data/chars/yamazaki/slash06.gif
+	bbox	18 13 42 107
+	frame	data/chars/yamazaki/slash07.gif
+	attack	59 3 53 48 7 1
+	frame	data/chars/yamazaki/slash08.gif
+	attack	0
+	frame	data/chars/yamazaki/slash09.gif
+	delay	8
+	frame	data/chars/yamazaki/slash10.gif
+	frame	data/chars/yamazaki/slash11.gif
+	frame	data/chars/yamazaki/slash12.gif
+	frame	data/chars/yamazaki/slash13.gif
+
+
+
+
+
+

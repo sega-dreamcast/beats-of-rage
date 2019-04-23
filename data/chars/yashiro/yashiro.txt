@@ -1,0 +1,95 @@
+name	Yashiro
+health	50
+speed	8
+type	enemy
+shadow	4
+icon	data/chars/yashiro/icon.gif
+diesound data/sounds/die1.wav
+
+remap	data/chars/yashiro/static1.gif data/chars/yashiro/alt1.gif
+remap	data/chars/yashiro/static1.gif data/chars/yashiro/alt2.gif
+remap	data/chars/yashiro/static1.gif data/chars/yashiro/alt3.gif
+
+anim idle
+	loop	1
+	offset	45 176
+	bbox	17 76 51 101
+	delay	7
+	frame	data/chars/yashiro/static1.gif
+	frame	data/chars/yashiro/static2.gif
+	frame	data/chars/yashiro/static3.gif
+	frame	data/chars/yashiro/static4.gif
+	frame	data/chars/yashiro/static5.gif
+	frame	data/chars/yashiro/static6.gif
+	frame	data/chars/yashiro/static7.gif
+	frame	data/chars/yashiro/static8.gif
+	frame	data/chars/yashiro/static9.gif
+	frame	data/chars/yashiro/static10.gif
+	frame	data/chars/yashiro/static11.gif
+	frame	data/chars/yashiro/static12.gif
+	frame	data/chars/yashiro/static13.gif
+	frame	data/chars/yashiro/static14.gif
+	frame	data/chars/yashiro/static15.gif
+	frame	data/chars/yashiro/static16.gif
+
+anim walk
+	loop	1
+	offset	45 176
+	bbox	17 76 51 101
+	delay	7
+	frame	data/chars/yashiro/walk1.gif
+	frame	data/chars/yashiro/walk2.gif
+	frame	data/chars/yashiro/walk3.gif
+	frame	data/chars/yashiro/walk4.gif
+	frame	data/chars/yashiro/walk5.gif
+	frame	data/chars/yashiro/walk6.gif
+	frame	data/chars/yashiro/walk7.gif
+	frame	data/chars/yashiro/walk8.gif
+
+anim pain
+	loop	0
+	offset	45 176
+	bbox	17 76 51 101
+	delay	12
+	frame	data/chars/yashiro/hurt1.gif
+	delay	50
+	frame	data/chars/yashiro/hurt2.gif
+	delay	12
+	frame	data/chars/yashiro/hurt1.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	45 170
+	frame	data/chars/yashiro/ko1.gif
+	attack	41 99 47 48 15 1
+	frame	data/chars/yashiro/ko3.gif
+	attack	18 150 82 27 15 1
+	frame	data/chars/yashiro/ko5.gif
+
+anim rise
+	loop	0
+	offset	50 109
+	delay	10
+	frame	data/chars/yashiro/rise1.gif
+	frame	data/chars/yashiro/rise2.gif
+	frame	data/chars/yashiro/rise3.gif
+	frame	data/chars/yashiro/rise4.gif
+	frame	data/chars/yashiro/rise5.gif
+
+
+anim attack1
+	range	10 80
+	loop	0
+	delay	7
+	offset	45 113
+	bbox	23 12 44 102
+	frame	data/chars/yashiro/punch1.gif
+	attack	62 26 54 25 10
+	frame	data/chars/yashiro/punch2.gif
+	attack	0 0 0 0 0
+	frame	data/chars/yashiro/punch3.gif
+	delay	20
+	frame	data/chars/yashiro/punch1.gif
+
+

@@ -1,0 +1,162 @@
+name	Heavy
+health	300
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/heavy/icon.gif
+diesound data/sounds/die1.wav
+
+
+remap	data/chars/heavy/stand1.gif data/chars/heavy/map1.gif
+
+
+anim idle
+	loop	1
+	offset	40 113
+	bbox	23 10 39 99
+	delay	12
+	frame	data/chars/heavy/stand1.gif
+	frame	data/chars/heavy/stand2.gif
+	frame	data/chars/heavy/stand3.gif
+	frame	data/chars/heavy/stand4.gif
+	frame	data/chars/heavy/stand5.gif
+	frame	data/chars/heavy/stand7.gif
+	frame	data/chars/heavy/stand8.gif
+
+anim walk
+	loop	1
+	offset	42 115
+	bbox	32 7 36 109
+	delay	8
+	frame	data/chars/heavy/walk01.gif
+	frame	data/chars/heavy/walk02.gif
+	frame	data/chars/heavy/walk03.gif
+	frame	data/chars/heavy/walk04.gif
+	frame	data/chars/heavy/walk05.gif
+	frame	data/chars/heavy/walk06.gif
+	frame	data/chars/heavy/walk07.gif
+	frame	data/chars/heavy/walk08.gif
+	frame	data/chars/heavy/walk09.gif
+	frame	data/chars/heavy/walk10.gif
+	frame	data/chars/heavy/walk11.gif
+	frame	data/chars/heavy/walk12.gif
+
+anim pain
+	loop	0
+	offset	42 120
+	bbox	17 6 43 120
+	delay	3
+	frame	data/chars/heavy/pain1.gif
+#	delay	10
+	frame	data/chars/heavy/pain2.gif
+	frame	data/chars/heavy/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	10
+	offset	78 117
+	attack	59 36 25 60 15 1
+	frame	data/chars/heavy/fall1.gif
+	attack	58 43 25 31 15 1
+	frame	data/chars/heavy/fall2.gif
+	attack	46 52 43 24 15 1
+	frame	data/chars/heavy/fall3.gif
+	attack	38 64 67 14 15 1
+	frame	data/chars/heavy/fall4.gif
+
+anim rise
+	loop	0
+	offset	62 104
+	delay	10
+	frame	data/chars/heavy/rise1.gif
+	frame	data/chars/heavy/rise2.gif
+	frame	data/chars/heavy/rise3.gif
+	frame	data/chars/heavy/rise4.gif
+	frame	data/chars/heavy/rise5.gif
+	frame	data/chars/heavy/rise6.gif
+	frame	data/chars/heavy/rise7.gif
+
+
+anim attack1
+	range	1 90
+	loop	0
+	delay	4
+	offset	48 115
+	bbox	30 7 42 107
+	frame	data/chars/heavy/punch01.gif
+	frame	data/chars/heavy/punch02.gif
+	frame	data/chars/heavy/punch03.gif
+	frame	data/chars/heavy/punch04.gif
+	bbox	50 7 42 107
+	attack	89 20 57 37 20 1
+	frame	data/chars/heavy/punch05.gif
+	frame	data/chars/heavy/punch06.gif
+	frame	data/chars/heavy/punch07.gif
+	bbox	40 7 48 107
+	attack	0 0 0 0 0 0
+	frame	data/chars/heavy/punch08.gif
+	frame	data/chars/heavy/punch09.gif
+	bbox	30 7 42 107
+	frame	data/chars/heavy/punch10.gif
+
+
+
+anim special
+#	range	10 80
+	loop	0
+	delay	4
+	offset	69 166
+#	bbox	51 54 38 111
+	sound	data/sounds/maxboom.wav
+	frame	data/chars/heavy/explo01.gif
+#	bbox	52 34 34 123
+	frame	data/chars/heavy/explo04.gif
+	frame	data/chars/heavy/explo03.gif
+	frame	data/chars/heavy/explo04.gif
+	frame	data/chars/heavy/explo05.gif
+#	bbox	43 77 53 90
+	frame	data/chars/heavy/explo06.gif
+	frame	data/chars/heavy/explo07.gif
+	frame	data/chars/heavy/explo08.gif
+	frame	data/chars/heavy/explo09.gif
+	frame	data/chars/heavy/explo10.gif
+	attack	20 35 96 134 12 1
+	delay	5
+	frame	data/chars/heavy/explo11.gif
+	attack	10 35 115 139 12 1
+	frame	data/chars/heavy/explo12.gif
+	frame	data/chars/heavy/explo13.gif
+	frame	data/chars/heavy/explo14.gif
+	frame	data/chars/heavy/explo15.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/heavy/explo16.gif
+	frame	data/chars/heavy/explo17.gif
+	frame	data/chars/heavy/explo18.gif
+	frame	data/chars/heavy/explo19.gif
+
+
+
+anim upper
+	loop	0
+	delay	6
+	offset	53 143
+	bbox	28 46 44 97
+	frame	data/chars/heavy/upper1.gif
+	bbox	41 46 44 97
+	frame	data/chars/heavy/upper2.gif
+	attack	75 43 33 38 15 0
+	frame	data/chars/heavy/upper3.gif
+	bbox	49 24 32 117
+	attack	27 0 36 70 15 1
+	frame	data/chars/heavy/upper4.gif
+	delay	20
+	frame	data/chars/heavy/upper5.gif
+	delay	10
+	frame	data/chars/heavy/upper6.gif
+	frame	data/chars/heavy/upper7.gif
+	bbox	37 32 33 114
+	attack	0 0 0 0 0 0
+	frame	data/chars/heavy/upper8.gif
+
+

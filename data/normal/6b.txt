@@ -1,0 +1,197 @@
+# Boss' hotel room
+music		data/music/exist.bor
+
+# Load images
+background	data/bgs/boss/back.gif
+
+# Front layer
+frontpanel	data/bgs/boss/front.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/boss/p01.gif		none		none
+panel		data/bgs/boss/p02r.gif		none		data/bgs/boss/s02.gif
+panel		data/bgs/boss/p03r.gif		none		data/bgs/boss/s03.gif
+panel		data/bgs/boss/p04.gif		none		data/bgs/boss/s04.gif
+panel		data/bgs/boss/p05.gif		none		none
+panel		data/bgs/boss/p06.gif		none		none
+
+order		abcdef
+
+direction	left
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+group	0 0
+at	0
+
+wait
+at	0
+
+group	1 5
+at	0
+
+wait
+at	100
+
+
+spawn	shermie
+map	2
+health	60
+coords	-30 165
+at	1
+
+spawn	Yashiro
+map	2
+health	80
+coords	-40 175
+at	1
+
+spawn	shermie
+map	1
+health	60
+coords	-30 180
+at	1
+
+spawn	Ralf
+health	80
+coords	-35 190
+at	1
+
+spawn	Ralf
+map	2
+health	80
+coords	-30 185
+at	1
+
+#---
+
+spawn	k'
+health	60
+coords	360 230
+at	1
+
+spawn	Angel
+map	2
+health	120
+coords	360 220
+at	1
+
+spawn	Angel
+map	3
+health	120
+coords	370 210
+at	1
+
+spawn	Billy
+map	1
+health	100
+coords	355 200
+at	1
+
+spawn	billy
+map	2
+health	100
+coords	363 190
+at	1
+
+#-----------
+
+spawn	Joe
+map	2
+health	150
+coords	-30 230
+at	1
+
+spawn	Joe
+map	3
+health	150
+coords	-30 200
+at	1
+
+spawn	Jhun
+health	100
+coords	360 220
+at	1
+
+spawn	Jhun
+health	150
+coords	360 190
+at	1
+
+spawn	Angel
+health	120
+coords	-30 160
+at	1
+
+#---------
+
+#spawn	Eiji
+#map	6
+#health	130
+#coords	360 200
+#at	1
+
+#spawn	Eiji
+#map	5
+#health	130
+#coords	-30 220
+#at	1
+
+#spawn	Angel
+#map	5
+#health	120
+#coords	360 210
+#at	1
+
+#spawn	Billy
+#health	100
+#coords	365 160
+#at	1
+
+#spawn	K'
+#map	1
+#health	70
+#coords	-30 220
+#at	1
+
+#-----------------
+# Now go to cut-scene
+

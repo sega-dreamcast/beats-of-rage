@@ -1,0 +1,167 @@
+name	Lobster
+health	100
+type	enemy
+shadow	5
+icon	data/chars/lobster/icon.gif
+diesound data/sounds/alien.wav
+
+
+remap	data/chars/lobster/stand1.gif data/chars/lobster/alt1.gif
+remap	data/chars/lobster/stand1.gif data/chars/lobster/alt2.gif
+remap	data/chars/lobster/stand1.gif data/chars/lobster/alt3.gif
+remap	data/chars/lobster/stand1.gif data/chars/lobster/alt4.gif
+remap	data/chars/lobster/stand1.gif data/chars/lobster/alt5.gif
+
+
+anim idle
+	loop	1
+	offset	46 81
+	bbox	16 6 66 76
+	delay	10
+	frame	data/chars/lobster/stand1.gif
+	frame	data/chars/lobster/stand2.gif
+	frame	data/chars/lobster/stand3.gif
+	frame	data/chars/lobster/stand4.gif
+	frame	data/chars/lobster/stand5.gif
+
+
+anim pain
+	loop	0
+	offset	54 92
+	bbox	33 7 57 84
+	delay	10
+	frame	data/chars/lobster/die03.gif
+	delay	30
+	frame	data/chars/lobster/die04.gif
+	delay	10
+	frame	data/chars/lobster/die03.gif
+
+
+anim fall
+	loop	0
+	delay	25
+	offset	54 92
+	frame	data/chars/lobster/die02.gif
+	attack	25 45 57 20 15 1
+	frame	data/chars/lobster/die03.gif
+	frame	data/chars/lobster/die04.gif
+	frame	data/chars/lobster/die05.gif
+	frame	data/chars/lobster/die06.gif
+	frame	data/chars/lobster/die07.gif
+	frame	data/chars/lobster/die08.gif
+	delay	9
+	frame	data/chars/lobster/die09.gif
+	frame	data/chars/lobster/die10.gif
+	frame	data/chars/lobster/die11.gif
+	frame	data/chars/lobster/die12.gif
+	frame	data/chars/lobster/die13.gif
+	frame	data/chars/lobster/die14.gif
+	frame	data/chars/lobster/die15.gif
+	frame	data/chars/lobster/die16.gif
+	frame	data/chars/lobster/die17.gif
+	frame	data/chars/lobster/die18.gif
+	frame	data/chars/lobster/die19.gif
+	frame	data/chars/lobster/die20.gif
+	frame	data/chars/lobster/die21.gif
+	frame	data/chars/lobster/die22.gif
+	frame	data/chars/lobster/die23.gif
+	frame	data/chars/lobster/die24.gif
+	frame	data/chars/lobster/die25.gif
+	frame	data/chars/lobster/die26.gif
+
+
+anim walk
+	loop	1
+	delay	7
+	offset	52 86
+	bbox	19 9 64 77
+	frame	data/chars/lobster/walk01.gif
+	frame	data/chars/lobster/walk02.gif
+	frame	data/chars/lobster/walk03.gif
+	frame	data/chars/lobster/walk04.gif
+	frame	data/chars/lobster/walk05.gif
+	frame	data/chars/lobster/walk06.gif
+	frame	data/chars/lobster/walk07.gif
+	frame	data/chars/lobster/walk08.gif
+	frame	data/chars/lobster/walk09.gif
+	frame	data/chars/lobster/walk10.gif
+	frame	data/chars/lobster/walk11.gif
+	frame	data/chars/lobster/walk12.gif
+
+
+anim rise
+	loop	0
+	offset	60 93
+	delay	15
+	frame	data/chars/lobster/die06.gif
+	frame	data/chars/lobster/die05.gif
+	frame	data/chars/lobster/die04.gif
+	frame	data/chars/lobster/die03.gif
+	frame	data/chars/lobster/die02.gif
+
+
+anim attack1
+	range	20 100
+	loop	0
+	delay	4
+	offset	81 120
+	bbox	46 36 54 83
+	frame	data/chars/lobster/punch01.gif
+	frame	data/chars/lobster/punch02.gif
+	frame	data/chars/lobster/punch03.gif
+	frame	data/chars/lobster/punch04.gif
+	frame	data/chars/lobster/punch05.gif
+	frame	data/chars/lobster/punch06.gif
+	attack	41 8 59 27 14 1
+	frame	data/chars/lobster/punch07.gif
+	bbox	51 36 58 83
+	attack	84 2 58 46 14 1
+	frame	data/chars/lobster/punch08.gif
+	attack	119 6 45 68 14 1
+	frame	data/chars/lobster/punch09.gif
+	attack	124 45 50 76 14 1
+	frame	data/chars/lobster/punch10.gif
+	attack	0 0 0 0 0
+	delay	7
+	frame	data/chars/lobster/punch11.gif
+	frame	data/chars/lobster/punch12.gif
+	frame	data/chars/lobster/punch13.gif
+	frame	data/chars/lobster/punch14.gif
+
+
+anim attack2
+	range	0 90
+	loop	0
+	delay	4
+	offset	49 92
+	bbox	14 15 62 79
+	frame	data/chars/lobster/slash01.gif
+	frame	data/chars/lobster/slash02.gif
+	frame	data/chars/lobster/slash03.gif
+	delay	3
+	frame	data/chars/lobster/slash04.gif
+	frame	data/chars/lobster/slash05.gif
+	attack	70 20 39 53 8 0
+	frame	data/chars/lobster/slash06.gif
+	attack	78 38 56 57 8 0
+	frame	data/chars/lobster/slash07.gif
+	delay	5
+	frame	data/chars/lobster/slash08.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/lobster/slash09.gif
+	frame	data/chars/lobster/slash10.gif
+	delay	4
+	frame	data/chars/lobster/slash01.gif
+	frame	data/chars/lobster/slash02.gif
+	frame	data/chars/lobster/slash03.gif
+	delay	3
+	frame	data/chars/lobster/slash04.gif
+	frame	data/chars/lobster/slash05.gif
+	attack	70 20 39 53 8 0
+	frame	data/chars/lobster/slash06.gif
+	attack	78 38 56 57 8 0
+	frame	data/chars/lobster/slash07.gif
+	frame	data/chars/lobster/slash08.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/lobster/slash09.gif
+	frame	data/chars/lobster/slash10.gif

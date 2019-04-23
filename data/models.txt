@@ -1,0 +1,64 @@
+# List all character models to be loaded.
+# Syntax:
+# load		[name]		[path]		// Load on startup
+# know		[name]		[path]		// Load when needed
+# 
+
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+
+# Players must also be loaded.
+load	Kula		data/chars/kula/kula.txt
+load	Max		data/chars/maxima/maxima.txt
+load	Mandy		data/chars/mary/mary.txt
+load	Mighty		data/chars/mighty/mighty.txt
+
+# Items and other objects can be loaded when needed.
+know	Apple		data/chars/misc/apple.txt
+know	Meat		data/chars/misc/meat.txt
+know	1up		data/chars/misc/1up.txt
+know	Money		data/chars/misc/money.txt
+know	Gold		data/chars/misc/gold.txt
+know	Time		data/chars/misc/time.txt
+
+# Obstacles (item containers)
+know	Box		data/chars/misc/box.txt
+know	Crate		data/chars/misc/crate.txt
+know	Trash		data/chars/misc/trash.txt
+know	Table		data/chars/misc/table.txt
+know	Chair		data/chars/misc/chair.txt
+know	Fence		data/chars/misc/fence.txt
+know	Drum		data/chars/misc/drum.txt
+know	Trolly		data/chars/misc/trolly.txt
+
+# Enemies
+know	K'		data/chars/k/k.txt
+know	biker-K'	data/chars/biker-k/biker-k.txt
+know	Yashiro		data/chars/yashiro/yashiro.txt
+know	Ralf		data/chars/ralf/ralf.txt
+know	Shermie		data/chars/shermie/shermie.txt
+know	Eiji		data/chars/eiji/eiji.txt
+know	Joe		data/chars/joe/joe.txt
+know	Yamazaki	data/chars/yamazaki/yamazaki.txt
+know	Angel		data/chars/angel/angel.txt
+know	Billy		data/chars/billy/billy.txt
+know	Jhun		data/chars/jhun/jhun.txt
+know	Mrbig		data/chars/mrbig/mrbig.txt
+know	Robert		data/chars/robert/robert.txt
+know	Heavy		data/chars/heavy/heavy.txt
+know	K9999		data/chars/K9999/K9999.txt
+know	Rugal		data/chars/Rugal/Rugal.txt
+
+# Not a real enemy... ;)
+know	Ramon		data/chars/ramon/ramon.txt
+
+# Other stuff
+know	Knife		data/chars/misc/knife.txt
+know	Shot		data/chars/misc/shot.txt
+know	Star		data/chars/misc/star.txt
+know	Steam		data/chars/misc/steam.txt
+know	Steamer		data/chars/misc/steamer.txt
+know	Furnace		data/chars/misc/furnace.txt
+know	Crab		data/chars/crab/crab.txt
+know	Lobster		data/chars/Lobster/Lobster.txt

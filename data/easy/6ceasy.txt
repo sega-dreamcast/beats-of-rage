@@ -1,0 +1,244 @@
+# Boss' hotel room
+music		data/music/joe.bor
+
+# Load images
+background	data/bgs/boss/back.gif
+
+# Front layer
+frontpanel	data/bgs/boss/front.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/boss/p01.gif		none		none
+panel		data/bgs/boss/p02e.gif		none		data/bgs/boss/s02.gif
+panel		data/bgs/boss/p03e.gif		none		data/bgs/boss/s03.gif
+panel		data/bgs/boss/p04.gif		none		data/bgs/boss/s04.gif
+panel		data/bgs/boss/p05.gif		none		none
+
+order		abcde
+
+direction	right
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+wait
+at 0
+
+
+#-----------------
+
+group	3 3
+at	0
+
+spawn	Rugal
+alias	Mr._Y
+map	1
+boss	1
+health	350
+coords	150 160
+at	0
+
+
+
+#---reinforcements---
+
+spawn	Yashiro
+map	0
+coords	380 220
+at	0
+
+spawn	Ralf
+map	0
+coords	380 220
+at	0
+
+spawn	Eiji
+alias	Saishu
+map	0
+coords	-30 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Joe
+map	0
+coords	-30 220
+at	0
+
+spawn	Jhun
+map	0
+coords	380 220
+at	0
+
+spawn	Ralf
+map	0
+coords	380 220
+at	0
+
+spawn	Eiji
+map	0
+coords	380 220
+at	0
+
+spawn	Shermie
+map	0
+coords	-30 220
+at	0
+
+spawn	Angel
+map	0
+coords	380 220
+at	0
+
+spawn	Billy
+map	0
+coords	-30 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	-30 220
+at	0
+
+spawn	Ralf
+map	0
+coords	380 220
+at	0
+
+spawn	Shermie
+map	0
+coords	380 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Joe
+map	0
+coords	380 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	-30 220
+at	0
+
+spawn	Ralf
+map	0
+coords	-30 220
+at	0
+
+spawn	Shermie
+map	0
+coords	380 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Joe
+map	0
+coords	380 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	-30 220
+at	0
+
+spawn	Ralf
+map	0
+coords	380 220
+at	0
+
+spawn	Eiji
+map	0
+coords	380 220
+at	0
+
+spawn	K'
+map	0
+coords	-30 220
+at	0
+
+spawn	Angel
+map	0
+coords	380 220
+at	0
+
+spawn	Joe
+map	0
+coords	380 220
+at	0
+
+spawn	Jhun
+map	0
+coords	-30 220
+at	0
+
+
+
+
+
+
+

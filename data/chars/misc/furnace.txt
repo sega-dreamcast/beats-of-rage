@@ -1,0 +1,18 @@
+name	Furnace
+type	None
+shadow	0
+
+load	Steam
+
+anim idle
+	loop	1
+	delay	10
+	offset	0 49
+	frame	data/chars/misc/cooking0.gif
+	frame	data/chars/misc/cooking1.gif
+	frame	data/chars/misc/cooking2.gif
+	frame	data/chars/misc/cooking3.gif
+	frame	data/chars/misc/cooking4.gif
+	frame	data/chars/misc/cooking5.gif
+	frame	data/chars/misc/cooking6.gif
+	frame	data/chars/misc/cooking7.gif

@@ -1,0 +1,105 @@
+name	Billy
+health	100
+speed	9
+type	enemy
+shadow	5
+icon	data/chars/billy/icon.gif
+diesound data/sounds/die1.wav
+
+remap	data/chars/billy/idle01.gif data/chars/billy/alt1.gif
+remap	data/chars/billy/idle01.gif data/chars/billy/alt2.gif
+remap	data/chars/billy/idle01.gif data/chars/billy/alt3.gif
+remap	data/chars/billy/idle01.gif data/chars/billy/alt4.gif
+
+
+anim idle
+	loop	1
+	offset	49 93
+	bbox	31 4 41 92
+	delay	10
+	frame	data/chars/billy/idle01.gif
+	frame	data/chars/billy/idle02.gif
+	frame	data/chars/billy/idle03.gif
+	frame	data/chars/billy/idle04.gif
+	frame	data/chars/billy/idle05.gif
+	frame	data/chars/billy/idle06.gif
+	frame	data/chars/billy/idle07.gif
+	frame	data/chars/billy/idle08.gif
+	frame	data/chars/billy/idle09.gif
+
+anim walk
+	loop	1
+	offset	64 108
+	bbox	48 9 36 101
+	delay	10
+	frame	data/chars/billy/walk01.gif
+	frame	data/chars/billy/walk02.gif
+	frame	data/chars/billy/walk03.gif
+	frame	data/chars/billy/walk04.gif
+	frame	data/chars/billy/walk05.gif
+	frame	data/chars/billy/walk06.gif
+
+anim pain
+	loop	0
+	offset	58 104
+	bbox	32 9 35 96
+	delay	6
+	frame	data/chars/billy/pain1.gif
+	frame	data/chars/billy/pain2.gif
+	delay	46
+	frame	data/chars/billy/pain3.gif
+	delay	10
+	frame	data/chars/billy/pain2.gif
+	frame	data/chars/billy/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	66 103
+	attack	47 16 50 85 12 1
+	frame	data/chars/billy/fall1.gif
+	attack	33 20 62 74 12 1
+	frame	data/chars/billy/fall2.gif
+	attack	18 63 54 33 12 1
+	frame	data/chars/billy/fall3.gif
+	attack	17 87 92 23 12 1
+	frame	data/chars/billy/fall4.gif
+
+anim rise
+	loop	0
+	offset	53 80
+	delay	15
+	frame	data/chars/billy/rise1.gif
+	frame	data/chars/billy/rise2.gif
+	frame	data/chars/billy/rise3.gif
+	frame	data/chars/billy/rise4.gif
+	frame	data/chars/billy/rise5.gif
+
+anim attack1
+	range	0 130
+	loop	0
+	delay	6
+	offset	77 119
+	bbox	54 35 36 85
+	frame	data/chars/billy/swing01.gif
+	bbox	52 35 36 85
+	frame	data/chars/billy/swing02.gif
+	bbox	77 35 36 85
+	attack	16 63 71 42 15 1
+	frame	data/chars/billy/swing03.gif
+	bbox	75 41 50 80
+	attack	95 41 111 71 15 1
+	frame	data/chars/billy/swing04.gif
+	attack	125 38 84 15 15 1
+	frame	data/chars/billy/swing05.gif
+	attack	99 7 61 45 15 1
+	frame	data/chars/billy/swing06.gif
+	attack	25 9 86 43 10 0
+	frame	data/chars/billy/swing07.gif
+	attack	27 14 39 40 6 0
+	frame	data/chars/billy/swing08.gif
+	frame	data/chars/billy/swing09.gif
+
+
+

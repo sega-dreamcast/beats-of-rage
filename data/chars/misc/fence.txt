@@ -1,0 +1,24 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	fence
+health	1
+type	obstacle
+shadow	0
+icon	data/chars/misc/trasicon.gif
+diesound data/sounds/klunk.wav
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	23 47
+	bbox	8 -30 40 90
+	frame	data/chars/misc/fence.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	23 47
+	frame	data/chars/misc/fence2.gif

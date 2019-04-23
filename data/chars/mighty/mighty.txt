@@ -1,0 +1,108 @@
+name	Mighty
+health	45
+speed	12
+type	player
+shadow	3
+diesound data/sounds/die1.wav
+secret	1
+
+icon	data/chars/mighty/icon.gif
+remap	data/chars/mighty/idle00.gif data/chars/mighty/alt.gif
+
+
+anim idle
+	loop	1
+	offset	16 38
+	bbox	4 2 22 37
+	delay	300
+	frame	data/chars/mighty/idle00.gif
+	delay	20
+	frame	data/chars/mighty/idle01.gif
+	frame	data/chars/mighty/idle02.gif
+	frame	data/chars/mighty/idle03.gif
+	frame	data/chars/mighty/idle04.gif
+	frame	data/chars/mighty/idle03.gif
+	frame	data/chars/mighty/idle04.gif
+	frame	data/chars/mighty/idle03.gif
+	frame	data/chars/mighty/idle04.gif
+	frame	data/chars/mighty/idle01.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	19 38
+	bbox	9 3 21 35
+	frame	data/chars/mighty/walk00.gif
+	frame	data/chars/mighty/walk01.gif
+	frame	data/chars/mighty/walk02.gif
+	frame	data/chars/mighty/walk03.gif
+	frame	data/chars/mighty/walk04.gif
+	frame	data/chars/mighty/walk05.gif
+
+anim get
+	loop	0
+	delay	40
+	offset	15 26
+	frame	data/chars/mighty/duck.gif
+
+
+anim jump
+	loop	1
+	offset	13 26
+	delay	3
+	attack	1 1 26 26 15 1
+	frame	data/chars/mighty/jump00.gif
+	frame	data/chars/mighty/jump01.gif
+	frame	data/chars/mighty/jump00.gif
+	frame	data/chars/mighty/jump02.gif
+	frame	data/chars/mighty/jump00.gif
+	frame	data/chars/mighty/jump03.gif
+	frame	data/chars/mighty/jump00.gif
+	frame	data/chars/mighty/jump04.gif
+
+
+anim grab
+	loop	0
+	offset	4 35
+	bbox	2 2 26 30
+	delay	1000
+	frame	data/chars/mighty/grab.gif
+
+
+anim throw
+	loop	0
+	offset	16 28
+	delay	40
+	frame	data/chars/mighty/throw.gif
+
+
+anim pain
+	loop	0
+	offset	23 28
+	bbox	7 4 31 24
+	delay	1
+	frame	data/chars/mighty/pain.gif
+
+
+anim fall
+	loop	0
+	offset	23 28
+	attack	7 4 31 24 15 1
+	delay	1
+	frame	data/chars/mighty/pain.gif
+
+
+anim rise
+	loop	0
+	offset	23 28
+	delay	1
+	frame	data/chars/mighty/pain.gif
+
+
+anim land
+	loop	0
+	offset	14 36
+	delay	25
+	bbox	6 2 20 34
+	frame	data/chars/mighty/land.gif
+

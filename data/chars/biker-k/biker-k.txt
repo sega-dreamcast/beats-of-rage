@@ -1,0 +1,30 @@
+name	Biker-K'
+type	enemy
+subtype	biker
+health	3
+shadow	6
+icon	data/chars/k/icon.gif
+
+#Important addition
+load	K'
+
+remap	data/chars/biker-k/motor.gif	data/chars/biker-k/alt1.gif
+
+
+# Not really idle, but what the heck
+anim idle
+	loop	1
+	delay	100
+	offset	71 100
+	bbox	44 3 36 48
+	attack	101 61 37 40 10 1
+	frame	data/chars/biker-k/biker.gif
+
+anim pain
+	loop	1
+	delay	5
+	offset	71 100
+	attack	101 61 37 40 10 1
+	frame	data/chars/biker-k/motor.gif
+
+

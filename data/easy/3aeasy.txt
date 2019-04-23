@@ -1,0 +1,257 @@
+# Boat
+music		data/music/control.bor
+rock		1
+
+background	data/bgs/boat2/back.gif
+water		data/bgs/boat2/water.gif	15
+
+panel		data/bgs/boat2/p00.gif
+panel		data/bgs/boat2/p01.gif
+panel		data/bgs/boat2/p02.gif
+panel		data/bgs/boat2/p03.gif
+panel		data/bgs/boat2/p04.gif
+panel		data/bgs/boat2/p05.gif
+
+# Use combinations of a, bcd and ef
+
+order	daabcdaaefaabcdaaefaabcdaaefaa
+
+
+# ---------------------
+
+spawn	Angel
+alias	R._Signal
+health	100
+map	1
+coords	380 210
+at	10
+
+spawn	Angel
+alias	B._Signal
+health	90
+coords	380 160
+at	10
+
+#spawn	Angel
+#alias	P._Signal
+#health	100
+#map	3
+#coords	380 230
+#at	20
+
+spawn	Ralf
+alias	Zenith
+health	70
+map	2
+coords	380 220
+at	500
+
+spawn	Ralf
+alias	Apex
+map	1
+coords	-30 220
+at	510
+
+spawn	Ralf
+alias	Pinnacle
+map	3
+coords	380 170
+at	510
+
+wait
+at	750
+
+group	2 3
+at	750
+
+spawn	Yashiro
+alias	Yamano
+health	70
+map	1
+coords	-30 220
+at	750
+
+spawn	Yashiro
+alias	Toshido
+health	70
+coords	-30 170
+at	750
+
+spawn	Shermie
+map	2
+coords	380 220
+at	750
+
+spawn	Shermie
+alias	Leila
+map	1
+coords	380 190
+at	750
+
+spawn	ralf
+coords	380 230
+at	750
+
+group	1 3
+at	750
+
+spawn	Angel
+map	2
+coords	-30 160
+at	750
+
+spawn	Shermie
+map	2
+coords	380 220
+at	750
+
+#spawn	Angel
+#map	2
+#coords	380 160
+#at	750
+
+spawn	Yashiro
+map	2
+coords	380 160
+at	750
+
+#spawn	Ralf
+#map	2
+#coords	380 200
+#at	750
+
+#spawn	Yashiro
+#map	2
+#coords	-30 220
+#at	750
+
+
+#-------------------
+
+group	100 100
+at	800
+
+spawn	box
+item	apple
+flip	1
+coords	380 170
+at	800
+
+spawn	box
+item	gold
+flip	1
+coords	400 200
+at	800
+
+
+spawn	Angel
+map	2
+coords	380 160
+at	900
+
+spawn	K'
+map	2
+coords	-30 160
+at	850
+
+spawn	K'
+map	2
+coords	-30 220
+at	900
+
+
+spawn	Yashiro
+map	2
+coords	-30 220
+at	1200
+
+spawn	Yashiro
+health	80
+coords	380 220
+at	1200
+
+spawn	Yashiro
+map	2
+coords	380 220
+at	1200
+
+
+spawn	Angel
+map	2
+coords	380 220
+at	1600
+
+spawn	Shermie
+map	2
+coords	-30 160
+at	1600
+
+#spawn	Shermie
+#coords	-30 230
+#at	1600
+
+
+#spawn	Yashiro
+#coords	380 230
+#at	1750
+
+#spawn	Yashiro
+#coords	380 170
+#at	1750
+
+
+wait
+at	1900
+
+group	3 3
+at	1900
+
+spawn	K'
+coords	-30 220
+at	1900
+
+spawn	K'
+map	2
+coords	380 170
+at	1900
+
+spawn	K'
+map	1
+coords	380 220
+at	1900
+
+
+spawn	Yashiro
+health	150
+map	2
+coords	380 200
+at	1900
+
+spawn	Ralf
+coords	-30 220
+at	1900
+
+spawn	Ralf
+map	2
+coords	-30 170
+at	1900
+
+
+#-------------------
+
+
+wait
+at	2200
+
+spawn	Ralf
+map	2
+coords	-30 160
+health	60
+at	2100
+
+spawn	Billy
+map	2
+coords	380 160
+health	90
+at	2100
+

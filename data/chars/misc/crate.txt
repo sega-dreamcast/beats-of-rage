@@ -1,0 +1,21 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Crate
+health	1
+type	obstacle
+shadow	0
+icon	data/chars/misc/boxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	delay	1000
+	offset	30 67
+	bbox	0 -20 57 80
+	frame	data/chars/misc/crate.gif
+
+anim fall
+	delay	1000
+	offset	30 67
+	frame	data/chars/misc/crate.gif

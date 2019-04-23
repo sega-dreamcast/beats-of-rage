@@ -1,0 +1,96 @@
+# List level filenames here.
+#
+# Syntax:
+#	set	[difficulty]	Start a new set of levels (e.g. "normal")
+#
+#	file	[filename]	A level or part of a level
+#	next			Go to next level (show "stage clear" and stuff)
+#	scene	[filename]	Show a cut-scene
+#
+
+
+set	Easy
+
+file	data/easy/1aeasy.txt
+file	data/easy/1beasy.txt
+file	data/easy/1ceasy.txt
+next
+file	data/easy/2easy.txt
+next
+file	data/easy/3aeasy.txt
+file	data/easy/3beasy.txt
+file	data/easy/3ceasy.txt
+next
+file	data/easy/4aeasy.txt
+file	data/easy/4beasy.txt
+next
+file	data/easy/5aeasy.txt
+file	data/easy/5beasy.txt
+next
+file	data/easy/6aeasy.txt
+file	data/easy/6beasy.txt
+scene	data/scenes/rugal.txt
+file	data/easy/6ceasy.txt
+next
+scene	data/scenes/ending.txt
+
+
+set	Normal
+
+file	data/normal/1a.txt
+file	data/normal/1b.txt
+file	data/normal/1c.txt
+next
+file	data/normal/2.txt
+next
+file	data/normal/3a.txt
+file	data/normal/3b.txt
+file	data/normal/3c.txt
+next
+file	data/normal/4a.txt
+file	data/normal/4b.txt
+next
+file	data/normal/5a.txt
+file	data/normal/5b.txt
+next
+file	data/normal/6a.txt
+file	data/normal/6b.txt
+scene	data/scenes/rugal.txt
+file	data/normal/6c.txt
+next
+scene	data/scenes/ending.txt
+
+
+
+set	Hard
+
+file	data/hard/1ahard.txt
+file	data/hard/1bhard.txt
+file	data/hard/1chard.txt
+next
+file	data/hard/2hard.txt
+next
+file	data/hard/3ahard.txt
+file	data/hard/3bhard.txt
+file	data/hard/3chard.txt
+next
+file	data/hard/4ahard.txt
+file	data/hard/4bhard.txt
+next
+file	data/hard/5ahard.txt
+file	data/hard/5bhard.txt
+next
+file	data/hard/6ahard.txt
+file	data/hard/6bhard.txt
+scene	data/scenes/rugal.txt
+file	data/hard/6Chard.txt
+next
+scene	data/scenes/ending.txt
+
+
+
+set		Bonus
+ifcomplete	1
+file		data/extra.txt
+scene		data/scenes/sewer.txt
+

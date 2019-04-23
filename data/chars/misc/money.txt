@@ -1,0 +1,14 @@
+name	Money
+health	0
+score	1000
+type	item
+shadow	0
+icon	data/chars/misc/monicon.gif
+
+
+anim idle
+	loop	0
+	delay	1000
+	offset	7 14
+	bbox	0 0 16 16
+	frame	data/chars/misc/money.gif

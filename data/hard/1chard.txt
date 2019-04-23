@@ -1,0 +1,259 @@
+# Alley behind the bar
+music		data/music/1boss.bor
+
+background	data/bgs/alley/back
+
+panel		data/bgs/alley/p01 none none
+panel		data/bgs/alley/p02 none none
+panel		data/bgs/alley/p03 none none
+panel		data/bgs/alley/p04 none none
+panel		data/bgs/alley/p05 none none
+
+order	abcde
+
+# Block far right of level (a wall is there)
+blocked	1
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+
+
+spawn	Shermie
+coords	350 160
+at	10
+
+spawn	Shermie
+map	1
+coords	360 230
+at	20
+
+spawn	Yashiro
+map	1
+health	70
+coords	-30 195
+at	20
+
+spawn	Trash
+item	Meat
+coords	370 165
+at	40
+
+spawn	Trash
+2pitem	Meat
+coords	420 165
+at	40
+
+
+spawn	Yamazaki
+alias	Barbon
+health	400
+boss	1
+coords	350 230
+at	90
+
+
+spawn	Yashiro
+map	3
+health	80
+coords	400 160
+at	160
+
+spawn	Ralf
+map	3
+health	70
+coords	400 230
+at	160
+
+
+
+# Only AFTER the boss is spawned do we make the group size smaller
+
+group	3 3
+at	40
+
+
+# Re-enforcements
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Ralf
+map	1
+health	70
+coords	-30 230
+at	0
+
+spawn	Angel
+coords	-30 230
+health	80
+at	0
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Shermie
+map	1
+coords	-30 230
+at	0
+
+group	4 4
+at	40
+
+spawn	Ralf
+coords	-30 230
+health	60
+at	0
+
+spawn	Angel
+coords	-30 230
+health	80
+at	0
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Ralf
+map	1
+coords	-30 230
+health	60
+at	0
+
+spawn	Angel
+coords	-30 230
+health	80
+at	0
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Shermie
+map	1
+coords	-30 230
+at	0
+
+spawn	Ralf
+coords	-30 230
+health	50
+at	0
+
+spawn	Angel
+coords	-30 230
+at	0
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Ralf
+map	1
+health	70
+coords	-30 230
+at	0
+
+spawn	Angel
+coords	-30 230
+health	80
+at	0
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Shermie
+map	1
+coords	-30 230
+at	0
+
+spawn	Ralf
+coords	-30 230
+health	60
+at	0
+
+spawn	Angel
+coords	-30 230
+health	80
+at	0
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Ralf
+map	1
+coords	-30 230
+health	60
+at	0
+
+spawn	Angel
+coords	-30 230
+health	80
+at	0
+
+spawn	Yashiro
+coords	-30 230
+health	70
+at	0
+
+spawn	Shermie
+map	1
+coords	-30 230
+at	0
+
+spawn	Ralf
+coords	-30 230
+health	50
+at	0
+
+spawn	Angel
+coords	-30 230
+at	0
+

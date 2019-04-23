@@ -1,0 +1,331 @@
+name	Max
+health	120
+speed	7
+type	player
+shadow	5
+icon	data/chars/maxima/icon.gif
+diesound data/sounds/die1.wav
+
+
+remap	data/chars/maxima/walk007.gif data/chars/maxima/alter.gif
+
+
+anim idle
+	loop	1
+	delay	16
+	offset	38 117
+	bbox	20 0 53 119
+	frame	data/chars/maxima/idle000.gif
+	frame	data/chars/maxima/idle001.gif
+	frame	data/chars/maxima/idle002.gif
+	frame	data/chars/maxima/idle003.gif
+	frame	data/chars/maxima/idle004.gif
+	frame	data/chars/maxima/idle005.gif
+	frame	data/chars/maxima/idle006.gif
+	frame	data/chars/maxima/idle007.gif
+	frame	data/chars/maxima/idle008.gif
+	frame	data/chars/maxima/idle009.gif
+
+anim walk
+	loop	1
+	delay	14
+	offset	48 122
+	bbox	26 0 42 122
+	frame	data/chars/maxima/walk000.gif
+	frame	data/chars/maxima/walk001.gif
+	frame	data/chars/maxima/walk002.gif
+	frame	data/chars/maxima/walk003.gif
+	frame	data/chars/maxima/walk004.gif
+	frame	data/chars/maxima/walk005.gif
+	frame	data/chars/maxima/walk006.gif
+	frame	data/chars/maxima/walk007.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	34 117
+	frame	data/chars/maxima/get000.gif
+#	frame	data/chars/maxima/get001.gif
+	frame	data/chars/maxima/get002.gif
+#	frame	data/chars/maxima/get003.gif
+	delay	30
+	frame	data/chars/maxima/get004.gif
+	delay	5
+	frame	data/chars/maxima/get003.gif
+	frame	data/chars/maxima/get002.gif
+	frame	data/chars/maxima/get001.gif
+	frame	data/chars/maxima/get000.gif
+
+anim jump
+	loop	0
+	delay	10
+	offset	34 117
+	bbox	21 2 55 121
+	frame	data/chars/maxima/jump000.gif
+	bbox	20 0 58 105
+	frame	data/chars/maxima/jump001.gif
+	bbox	24 2 54 91
+	frame	data/chars/maxima/jump002.gif
+	bbox	18 5 67 74
+	frame	data/chars/maxima/jump003.gif
+	bbox	24 2 54 91
+	frame	data/chars/maxima/jump002.gif
+	bbox	20 0 58 105
+	frame	data/chars/maxima/jump001.gif
+	bbox	21 2 55 121
+	frame	data/chars/maxima/jump000.gif
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	70 107
+	bbox	40 6 43 92
+	frame	data/chars/maxima/jk0.gif
+	frame	data/chars/maxima/jk1.gif
+	frame	data/chars/maxima/jk2.gif
+	attack	70 38 72 29 7 1
+	bbox	40 6 53 81
+	frame	data/chars/maxima/jk3.gif
+	frame	data/chars/maxima/jk4.gif
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	70 107
+	bbox	49 0 40 87
+	frame	data/chars/maxima/jumpat00.gif
+	bbox	27 3 66 87
+	frame	data/chars/maxima/jumpat01.gif
+	bbox	30 4 58 84
+	frame	data/chars/maxima/jumpat02.gif
+	attack	79 11 23 43 7 0
+	bbox	23 5 77 62
+	frame	data/chars/maxima/jumpat03.gif
+
+anim attack1
+	loop	0
+	delay	5
+	offset	45 119
+	bbox	21 2 45 119
+	frame	data/chars/maxima/punch000.gif
+	frame	data/chars/maxima/punch001.gif
+	attack	76 21 42 39 7
+	bbox	31 6 51 116
+	frame	data/chars/maxima/punch002.gif
+	frame	data/chars/maxima/punch003.gif
+	attack	0 0 0 0 0
+	bbox	31 5 50 116
+	frame	data/chars/maxima/punch004.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	48 116
+	bbox	33 3 45 114
+	frame	data/chars/maxima/na2-00.gif
+	move	2
+	offset	50 116
+	frame	data/chars/maxima/na2-01.gif
+	offset	52 116
+	frame	data/chars/maxima/na2-02.gif
+	attack	59 31 64 32 14
+	offset	54 116
+	frame	data/chars/maxima/na2-03.gif
+	offset	56 116
+	frame	data/chars/maxima/na2-04.gif
+	attack	0
+	offset	58 116
+	frame	data/chars/maxima/na2-05.gif
+	move	0
+	frame	data/chars/maxima/na2-06.gif
+
+anim attack3
+	loop	0
+	delay	3
+	offset	49 148
+	bbox	36 35 38 115
+	frame	data/chars/maxima/a3-000.gif
+	frame	data/chars/maxima/a3-001.gif
+	bbox	32 35 38 115
+	frame	data/chars/maxima/a3-002.gif
+	delay	5
+	frame	data/chars/maxima/a3-003.gif
+	bbox	29 35 38 115
+	attack	9 23 25 42 20 1
+	frame	data/chars/maxima/a3-004.gif
+	bbox	37 35 38 115
+	attack	3 34 38 39 20 1
+	frame	data/chars/maxima/a3-005.gif
+	bbox	52 44 38 106
+	attack	15 62 49 42 20 1
+	frame	data/chars/maxima/a3-006.gif
+	bbox	74 44 33 106
+	attack	38 65 106 55 20 1
+	frame	data/chars/maxima/a3-007.gif
+	bbox	62 43 33 106
+	attack	93 10 39 90 20 1
+	frame	data/chars/maxima/a3-008.gif
+	bbox	60 33 33 116
+	attack	72 10 35 27 20 1
+	frame	data/chars/maxima/a3-009.gif
+	bbox	65 33 30 116
+	frame	data/chars/maxima/a3-010.gif
+	frame	data/chars/maxima/a3-011.gif
+
+anim grab
+	loop	0
+	delay	100
+	offset	82 115
+	bbox	71 10 35 108
+	frame	data/chars/maxima/grab.gif
+
+anim throw
+	loop	0
+	delay	7
+	offset	82 115
+	sound	data/sounds/maxuh.wav
+	frame	data/chars/maxima/throw001.gif
+	frame	data/chars/maxima/throw002.gif
+	frame	data/chars/maxima/throw003.gif
+	frame	data/chars/maxima/throw004.gif
+	frame	data/chars/maxima/throw005.gif
+	frame	data/chars/maxima/throw006.gif
+	frame	data/chars/maxima/throw007.gif
+	frame	data/chars/maxima/throw008.gif
+
+anim pain
+	loop	0
+	offset	67 117
+	bbox	48 12 37 105
+	delay	8
+	frame	data/chars/maxima/pain02.gif
+	delay	36
+	frame	data/chars/maxima/pain01.gif
+	delay	6
+	frame	data/chars/maxima/pain02.gif
+	frame	data/chars/maxima/pain03.gif
+	frame	data/chars/maxima/pain04.gif
+
+
+anim fall
+	loop	0
+	offset	67 67
+	delay	20
+	attack	38 16 44 49 17 1
+	frame	data/chars/maxima/fall00.gif
+	attack	13 48 107 26 17 1
+	frame	data/chars/maxima/fall01.gif
+
+
+anim rise
+	loop	0
+	offset	56 103
+	delay	10
+	frame	data/chars/maxima/rise1.gif
+	frame	data/chars/maxima/rise2.gif
+	frame	data/chars/maxima/rise3.gif
+	frame	data/chars/maxima/rise4.gif
+	frame	data/chars/maxima/rise5.gif
+
+
+# Escape move
+anim special
+	loop	0
+	delay	8
+	offset	81 212
+	blast	10 116 140 98 20 1
+	sound	data/sounds/maxboom.wav
+	frame	data/chars/maxima/super1.gif
+	frame	data/chars/maxima/super2.gif
+	frame	data/chars/maxima/super3.gif
+	frame	data/chars/maxima/super4.gif
+	frame	data/chars/maxima/super5.gif
+	attack	0 0 0 0 0
+	frame	data/chars/maxima/super6.gif
+	frame	data/chars/maxima/super7.gif
+	frame	data/chars/maxima/super8.gif
+
+
+
+# FFP special.
+anim freespecial
+ 	loop	0
+ 	delay	4
+ 	offset	34 125
+ 	bbox	25 21 44 103
+	sound	data/sounds/maxrockt.wav
+ 	frame	data/chars/maxima/spec000.gif
+ 	bbox	30 18 42 107
+ 	frame	data/chars/maxima/spec001.gif
+	move	20
+ 	offset	54 125
+ 	bbox	50 12 33 114
+ 	frame	data/chars/maxima/spec002.gif
+	move	50
+ 	offset	104 125
+ 	bbox	80 19 45 107
+ 	frame	data/chars/maxima/spec003.gif
+	move	0
+ 	frame	data/chars/maxima/spec004.gif
+ 	frame	data/chars/maxima/spec005.gif
+ 	bbox	91 25 45 101
+ 	frame	data/chars/maxima/spec006.gif
+ 	attack	119 29 105 36 24 1
+ 	frame	data/chars/maxima/spec007.gif
+ 	bbox	94 32 43 95
+ 	frame	data/chars/maxima/spec008.gif
+ 	frame	data/chars/maxima/spec009.gif
+ 	frame	data/chars/maxima/spec010.gif
+ 	frame	data/chars/maxima/spec011.gif
+ 	frame	data/chars/maxima/spec012.gif
+	frame	data/chars/maxima/spec013.gif
+	frame	data/chars/maxima/spec014.gif
+	attack	0
+	frame	data/chars/maxima/spec015.gif
+	frame	data/chars/maxima/spec016.gif
+	frame	data/chars/maxima/spec017.gif
+	frame	data/chars/maxima/spec018.gif
+	frame	data/chars/maxima/spec019.gif
+	frame	data/chars/maxima/spec020.gif
+	frame	data/chars/maxima/spec021.gif
+	move	-14
+ 	offset	90 125
+ 	bbox	74 22 41 104
+	frame	data/chars/maxima/spec022.gif
+	move	-25
+ 	offset	65 125
+ 	bbox	47 15 43 112
+	frame	data/chars/maxima/spec023.gif
+	move	-11
+ 	offset	54 125
+ 	bbox	39 14 40 112
+	frame	data/chars/maxima/spec024.gif
+	move	-20
+ 	offset	34 125
+ 	bbox	23 18 47 105
+	frame	data/chars/maxima/spec025.gif
+
+
+
+anim grabattack
+	loop	0
+	offset	34 125
+	bbox	30 16 34 123
+#	delay	8
+#	frame	data/chars/maxima/knee1.gif
+	delay	35
+	attack	41 60 31 41 10
+	frame	data/chars/maxima/knee1.gif
+#	attack	0
+#	delay	8
+#	frame	data/chars/maxima/knee1.gif
+
+
+
+anim land
+	loop	0
+	delay	25
+	offset	56 103
+	bbox	31 23 52 82
+	frame	data/chars/maxima/rise5.gif
+

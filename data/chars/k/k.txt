@@ -1,0 +1,84 @@
+name	K'
+health	60
+type	enemy
+shadow	3
+icon	data/chars/k/icon.gif
+diesound data/sounds/die2.wav
+
+
+remap	data/chars/k/idle001.gif data/chars/k/alter.gif
+
+
+anim idle
+	loop	1
+	offset	45 176
+	bbox	17 76 51 101
+	delay	30
+	frame	data/chars/k/idle002.gif
+	frame	data/chars/k/idle003.gif
+	frame	data/chars/k/idle002.gif
+	delay	200
+	frame	data/chars/k/idle001.gif
+
+anim pain
+	loop	0
+	offset	36 176
+	bbox	17 76 51 101
+	delay	10
+	frame	data/chars/k/hurt1.gif
+	delay	30
+	frame	data/chars/k/hurt2.gif
+	delay	10
+	frame	data/chars/k/hurt1.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	45 170
+	frame	data/chars/k/ko3.gif
+	attack	15 160 83 20 15 1
+	frame	data/chars/k/ko5.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	41 176
+	bbox	30 81 27 96
+	frame	data/chars/k/walk01.gif
+	frame	data/chars/k/walk02.gif
+	frame	data/chars/k/walk03.gif
+	frame	data/chars/k/walk04.gif
+	frame	data/chars/k/walk05.gif
+	frame	data/chars/k/walk06.gif
+	frame	data/chars/k/walk07.gif
+	frame	data/chars/k/walk08.gif
+	frame	data/chars/k/walk09.gif
+	frame	data/chars/k/walk10.gif
+	frame	data/chars/k/walk11.gif
+	frame	data/chars/k/walk12.gif
+
+
+anim rise
+	loop	0
+	offset	41 176
+	delay	40
+	frame	data/chars/k/crouch1.gif
+
+
+anim attack1
+	range	10 70
+	loop	0
+	delay	7
+	offset	37 177
+	bbox	27 82 31 95
+	frame	data/chars/k/punch1.gif
+	attack	57 81 43 15 12
+	frame	data/chars/k/punch2.gif
+	frame	data/chars/k/punch3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/k/punch4.gif
+	frame	data/chars/k/punch5.gif
+	frame	data/chars/k/punch6.gif
+
+
+

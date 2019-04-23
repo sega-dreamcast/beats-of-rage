@@ -1,0 +1,346 @@
+# Street
+music		data/music/asc.bor
+
+# Load images
+background	data/bgs/street/back.gif
+
+# Front layer
+frontpanel	data/bgs/street/f00.gif
+frontpanel	data/bgs/street/f01.gif
+frontpanel	data/bgs/street/f02.gif
+frontpanel	data/bgs/street/f03.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
+panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
+panel		data/bgs/street/n03.gif	none				none
+panel		data/bgs/street/n04.gif	none				none
+panel		data/bgs/street/n05.gif	none				data/bgs/street/s05
+panel		data/bgs/street/n06.gif	none				none
+panel		data/bgs/street/n07.gif	none				none
+panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
+
+# ab = Pinepot left
+# c = wall, ridge left
+# d = wall, ridge right + 078
+# e = window
+# f = door
+# g = wall
+# h = Club K neon
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order	fdefecdhfecggdabcd
+order	fdefecdhfecggdab
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+#--group1-----
+spawn	1up
+coords	30 230
+at	0
+
+spawn	Shermie
+alias	Prissy
+coords	350 160
+health	25
+at	10
+
+spawn	Shermie
+alias	Hubcaps
+map	1
+health	30
+coords	350 220
+at	15
+
+
+#---group2----------
+
+spawn	Yashiro
+alias	Oxnard
+map	2
+health	30
+coords	350 190
+at	200
+
+spawn	Shermie
+alias	Elayne
+map	1
+health	25
+coords	-30 160
+at	220
+
+wait
+at	320
+
+#--group3-----------
+
+spawn	Trash
+item	money
+coords	370 165
+at	400
+
+spawn	Shermie
+alias	Madchen
+health	30
+coords	-30 200
+at	450
+
+#spawn	Shermie
+#alias	Hubchen
+#health	35
+#map	2
+#coords	340 210
+#at	470
+
+spawn	ralf
+alias	Jimmy
+health	45
+coords	350 165
+at	470
+
+
+
+#------------
+
+spawn	ralf
+alias	Timmy
+map	1
+health	40
+coords	-30 210
+at	700
+
+spawn	shermie
+alias	Sassy
+health	25
+coords	350 165
+at	710
+
+spawn	ralf
+alias	Oswald
+health	40
+coords	350 220
+at	710
+
+wait
+at	720
+
+#--------------
+
+group	1 2
+at	950
+
+wait
+at	960
+
+spawn	ralf
+alias	Krogar
+map	2
+health	40
+coords	350 220
+at	960
+
+spawn	ralf
+alias	Betan
+health	40
+coords	-30 170
+at	960
+
+spawn	yashiro
+alias	Chuck
+health	60
+coords	350 170
+at	960
+
+spawn	yashiro
+alias	Frank
+map	1
+health	60
+coords	350 170
+at	960
+
+spawn	shermie
+alias	Lisa
+map	2
+health	30
+coords	-30 170
+at	960
+
+spawn	Shermie
+alias	Red_Sonja
+health	30
+coords	-30 200
+at	960
+
+
+group	100 100
+at	1000
+
+#---------
+
+spawn	trash
+item	Meat
+coords	370 162
+at	1100
+
+spawn	Shermie
+alias	Luna
+map	2
+health	35
+coords	-30 170
+at	1150
+
+spawn	yashiro
+alias	Thug
+health	70
+coords	-30 220
+at	1150
+
+spawn	Shermie
+alias	Venus
+map	2
+health	30
+coords	350 200
+at	1150
+
+wait
+at	1200
+
+#---------
+
+#spawn	Ralf
+#alias	Ralph_Malph
+#map	1
+#health	45
+#coords	350 228
+#at	1400
+
+spawn	yashiro
+alias	Doc
+map	2
+health	60
+coords	-30 226
+at	1420
+
+spawn	ralf
+alias	Squat
+health	40
+coords	350 200
+at	1430
+
+spawn	yashiro
+alias	Cutter
+map	1
+health	40
+coords	-30 165
+at	1430
+
+
+spawn	Shermie
+alias	Butter
+map	0
+health	40
+coords	350 165
+at	1750
+
+spawn	Ralf
+alias	Turner
+map	1
+health	50
+coords	350 220
+at	1750
+
+wait
+at	1800
+
+
+spawn	yashiro
+alias	Stinky
+map	2
+health	70
+coords	-30 165
+at	1930
+
+spawn	yashiro
+alias	Jimmy_Jimmy
+map	0
+health	40
+coords	350 165
+at	1950
+
+spawn	Shermie
+alias	Gloria
+map	1
+health	40
+coords	350 165
+at	1950
+
+
+spawn	trash
+item	apple
+coords	370 165
+at	2300
+
+spawn	trash
+item	money
+coords	370 220
+at	2300
+
+spawn	angel
+health	100
+coords	350 200
+at	2300
+
+spawn	shermie
+alias	Slappy
+map	2
+coords	-30 165
+at	2300
+
+wait
+at	2400
+
+

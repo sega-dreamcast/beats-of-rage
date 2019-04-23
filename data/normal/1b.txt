@@ -1,0 +1,238 @@
+# The bar
+music		data/music/kof.bor
+background	data/bgs/bar/bar.gif
+panel		data/bgs/bar/bar1.gif none none
+panel		data/bgs/bar/bar2.gif none none
+
+order	aabaabaabaabaa
+
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+spawn	Table
+2pitem	Apple
+coords	160 230
+at	0
+
+spawn	Chair
+item	Money
+coords	200 220
+at	0
+
+spawn	Yashiro
+map	1
+coords	350 160
+at	1
+
+spawn	Yashiro
+map	2
+coords	-30 230
+at	1
+
+wait
+at	100
+
+
+spawn	Shermie
+coords	-50 220
+at	190
+
+spawn	Yashiro
+coords	350 170
+at	190
+
+spawn	Ralf
+coords	350 220
+at	190
+
+
+wait
+at	200
+
+
+spawn	Shermie
+map	1
+coords	350 180
+at	280
+
+spawn	Yashiro
+map	1
+coords	350 230
+at	280
+
+spawn	Ralf
+map	1
+coords	-50 180
+at	280
+
+spawn	Ralf
+map	0
+coords	-50 230
+at	280
+
+wait
+at	310
+
+group	3 3
+at	320
+
+wait
+at	400
+
+spawn	Angel
+map	0
+health	100
+coords	350 230
+at	320
+
+spawn	Yashiro
+map	1
+health	60
+coords	350 180
+at	320
+
+spawn	Ralf
+map	2
+health	70
+coords	-30 180
+at	320
+
+spawn	Yashiro
+map	0
+health	30
+coords	350 180
+at	320
+
+spawn	Ralf
+map	1
+health	40
+coords	-30 230
+at	320
+
+spawn	Shermie
+map	2
+health	40
+coords	350 165
+at	320
+
+
+group	100 100
+at	410
+
+spawn	Ralf
+map	0
+health	70
+coords	350 230
+at	440
+
+spawn	Yashiro
+map	2
+health	60
+coords	-30 230
+at	440
+
+spawn	Yashiro
+map	1
+health	70
+coords	350 230
+at	440
+
+wait
+at	720
+
+spawn	Angel
+map	1
+health	100
+coords	350 230
+at	720
+
+spawn	Table
+item	gold
+coords	380 230
+at	721
+
+spawn	Chair
+2pitem	money
+coords	420 220
+at	721
+
+spawn	Chair
+item	apple
+flip	1
+coords	380 170
+at	721
+
+spawn	Table
+item	money
+coords	420 180
+at	721
+
+spawn	Chair
+2pitem	Apple
+coords	460 170
+at	721
+
+
+#-----after 720---------
+
+spawn	Shermie
+map	0
+health	40
+coords	350 230
+at	800
+
+spawn	Yashiro
+map	0
+health	60
+coords	-30 195
+at	800
+
+spawn	Angel
+map	1
+health	80
+coords	350 230
+at	1000
+
+spawn	Angel
+map	0
+health	80
+coords	350 170
+at	1000

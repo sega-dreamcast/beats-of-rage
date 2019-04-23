@@ -1,0 +1,408 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Kula
+health	100
+speed	9
+type	player
+shadow	3
+diesound data/sounds/eek.wav
+
+icon	data/chars/kula/icon.gif
+
+
+# To create an alternate colour version, enter the path to
+# an image in the original, and one in the alternative colourset.
+remap	data/chars/kula/walk009.gif data/chars/kula/alter.gif
+
+
+# Animation syntax:
+# First enter the name of the animation:
+#	anim	[name]				idle, walk, jump, etc
+#
+# Then add some other values, like so:
+# 	loop	[0/1]
+#	offset	x y					location of center,bottom
+#	delay	num					in 100th seconds
+#	bbox	x y width height			weak point
+#	attack	x y width height force drop long	attack rect, force, drop opponent, hurt longer
+#
+# Every time you specify "frame", a frame is appended to the animation,
+# using the settings you just specified. You can change all the values
+# at any time between adding frames, though changing "loop" again is
+# ofcourse essentially pointless.
+# All numeric values default to 0 if not specified.
+# 
+#	frame	[path]
+#
+# The maximum number of frames per animation is 32.
+# You may use GIF, PCX or BMP files.
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	23 103
+	bbox	14 6 22 97
+	frame	data/chars/kula/stand000.gif
+	frame	data/chars/kula/stand001.gif
+	frame	data/chars/kula/stand002.gif
+	frame	data/chars/kula/stand003.gif
+	frame	data/chars/kula/stand004.gif
+	frame	data/chars/kula/stand005.gif
+	frame	data/chars/kula/stand006.gif
+	frame	data/chars/kula/stand007.gif
+	frame	data/chars/kula/stand008.gif
+	frame	data/chars/kula/stand009.gif
+	frame	data/chars/kula/stand010.gif
+	frame	data/chars/kula/stand011.gif
+	frame	data/chars/kula/stand012.gif
+	frame	data/chars/kula/stand013.gif
+	frame	data/chars/kula/stand014.gif
+	frame	data/chars/kula/stand015.gif
+	frame	data/chars/kula/stand016.gif
+	frame	data/chars/kula/stand017.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	26 104
+	bbox	19 3 15 101
+	frame	data/chars/kula/walk000.gif
+	frame	data/chars/kula/walk001.gif
+	frame	data/chars/kula/walk002.gif
+	frame	data/chars/kula/walk003.gif
+	frame	data/chars/kula/walk004.gif
+	frame	data/chars/kula/walk005.gif
+	frame	data/chars/kula/walk006.gif
+	frame	data/chars/kula/walk007.gif
+	frame	data/chars/kula/walk008.gif
+	frame	data/chars/kula/walk009.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	41 95
+	frame	data/chars/kula/get000.gif
+	frame	data/chars/kula/get001.gif
+	delay	30
+	frame	data/chars/kula/get002.gif
+	delay	5
+	frame	data/chars/kula/get001.gif
+	frame	data/chars/kula/get000.gif
+
+
+anim attack1
+	loop	0
+	delay	4
+	bbox	15 0 19 99
+	offset	23 101
+	frame	data/chars/kula/a1-000.gif
+	bbox	24 5 19 94
+	move	10
+	offset	33 101
+	frame	data/chars/kula/a1-001.gif
+	attack	59 19 39 16 5
+	bbox	41 7 16 92
+	move	10
+	offset	43 101
+	frame	data/chars/kula/a1-002.gif
+	move	0
+	frame	data/chars/kula/a1-003.gif
+	attack	0 0 0 0 0
+	bbox	35 5 19 94
+	offset	33 101
+	move	-10
+	delay	2
+	frame	data/chars/kula/a1-004.gif
+	offset	23 101
+	move	-10
+	frame	data/chars/kula/a1-005.gif
+
+
+anim attack2
+	loop	0
+	delay	4
+	offset	32 104
+	bbox	19 7 30 97
+	frame	data/chars/kula/a2-000.gif
+	bbox	25 19 24 86
+	move	5
+	offset	37 104
+	frame	data/chars/kula/a2-001.gif
+	bbox	37 28 29 77
+	attack	64 39 59 30 10
+	move	5
+	offset	42 104
+	frame	data/chars/kula/a2-002.gif
+	move	0
+	frame	data/chars/kula/a2-003.gif
+	frame	data/chars/kula/a2-002.gif
+	attack	0 0 0 0 0
+	bbox	19 7 30 97
+	frame	data/chars/kula/a2-000.gif
+	move	-10
+	offset	32 104
+	frame	data/chars/kula/a2-006.gif
+
+
+anim attack3
+	loop	0
+	delay	6
+	offset	15 123
+	bbox	13 24 21 100
+	frame	data/chars/kula/a3-000.gif
+	move	10
+	offset	25 123
+	bbox	24 28 16 97
+	frame	data/chars/kula/a3-001.gif
+	move	10
+	offset	35 123
+	frame	data/chars/kula/a3-002.gif
+	move	0
+	attack	47 1 48 99 15 1
+	bbox	35 28 10 96
+	frame	data/chars/kula/a3-003.gif
+	attack	32 0 21 15 15 1
+	frame	data/chars/kula/a3-004.gif
+	attack	0 0 0 0 0
+	frame	data/chars/kula/a3-005.gif
+	bbox	24 28 16 97
+	frame	data/chars/kula/a3-002.gif
+	move	-10
+	offset	25 123
+	frame	data/chars/kula/a3-001.gif
+	move	-10
+	offset	15 123
+	bbox	13 24 21 100
+	frame	data/chars/kula/a3-000.gif
+
+
+anim special
+	loop	0
+	delay	3
+	offset	76 133
+	frame	data/chars/kula/super000.gif
+	frame	data/chars/kula/super001.gif
+	frame	data/chars/kula/super002.gif
+	frame	data/chars/kula/super003.gif
+	frame	data/chars/kula/super004.gif
+	frame	data/chars/kula/super005.gif
+	blast	5 50 64 85 20 1
+	frame	data/chars/kula/super006.gif
+	blast	5 50 64 137 20 1
+	frame	data/chars/kula/super007.gif
+	blast	69 50 64 72 20 1
+	frame	data/chars/kula/super008.gif
+	blast	0 0 0 0 0
+
+# second spin
+	frame	data/chars/kula/super015.gif
+	blast	0 67 116 68 20 1
+	frame	data/chars/kula/super014.gif
+	blast	3 57 72 76 20 1
+	frame	data/chars/kula/super013.gif
+	blast	66 52 52 83 20 1
+	frame	data/chars/kula/super012.gif
+	blast	0 0 0 0 0
+	frame	data/chars/kula/super011.gif
+	frame	data/chars/kula/super010.gif
+	frame	data/chars/kula/super009.gif
+# end second spin
+
+	frame	data/chars/kula/super016.gif
+	frame	data/chars/kula/super017.gif
+	frame	data/chars/kula/super018.gif
+#	blast	47 1 48 99 15
+
+
+
+anim freespecial
+	loop	0
+	delay	5
+	offset	41 115
+	bbox	38 15 19 102
+	sound	data/sounds/kulablow.wav
+	frame	data/chars/kula/kiss000.gif
+	frame	data/chars/kula/kiss001.gif
+	frame	data/chars/kula/kiss002.gif
+	frame	data/chars/kula/kiss003.gif
+	frame	data/chars/kula/kiss004.gif
+	frame	data/chars/kula/kiss005.gif
+	attack	56 28 36 15 20 1
+	frame	data/chars/kula/kiss006.gif
+	attack	56 29 44 23 20 1
+	frame	data/chars/kula/kiss007.gif
+	attack	67 34 75 36 20 1
+	frame	data/chars/kula/kiss008.gif
+	attack	68 33 104 53 20 1
+	frame	data/chars/kula/kiss009.gif
+	attack	67 35 112 58 20 1
+	frame	data/chars/kula/kiss010.gif
+	attack	67 35 117 58 20 1
+	frame	data/chars/kula/kiss011.gif
+	attack	67 35 122 58 20 1
+	frame	data/chars/kula/kiss012.gif
+	frame	data/chars/kula/kiss013.gif
+	frame	data/chars/kula/kiss014.gif
+	attack	0 0 0 0
+	frame	data/chars/kula/kiss015.gif
+	frame	data/chars/kula/kiss016.gif
+	frame	data/chars/kula/kiss017.gif
+	frame	data/chars/kula/kiss018.gif
+	frame	data/chars/kula/kiss019.gif
+	frame	data/chars/kula/kiss020.gif
+	frame	data/chars/kula/kiss021.gif
+	frame	data/chars/kula/kiss022.gif
+
+
+
+
+anim jump
+	loop	0
+	offset	50 113
+	delay	7
+	bbox	40 42 17 73
+	frame	data/chars/kula/jump000.gif
+	bbox	44 27 14 93
+	frame	data/chars/kula/jump001.gif
+	bbox	38 29 11 62
+	frame	data/chars/kula/jump002.gif
+	bbox	36 27 28 45
+	frame	data/chars/kula/jump003.gif
+	bbox	41 30 18 52
+	frame	data/chars/kula/jump004.gif
+	delay	1000
+	bbox	41 26 21 54
+	frame	data/chars/kula/jump005.gif
+
+
+anim jumpattack
+	loop	0
+	offset	31 90
+	delay	7
+	bbox	23 0 18 65
+	frame	data/chars/kula/jk000.gif
+	delay	1000
+	attack	68 51 32 27 6 1
+	frame	data/chars/kula/jk001.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	43 90
+	bbox	26 24 33 53
+	frame	data/chars/kula/airp00.gif
+	bbox	26 30 33 44
+	frame	data/chars/kula/airp01.gif
+	bbox	23 20 34 35
+	attack	44 49 28 32 6 0
+	frame	data/chars/kula/airp02.gif
+	delay	1000
+	attack	44 50 28 33 6 0
+	frame	data/chars/kula/airp03.gif
+
+
+anim grab
+	loop	0
+	offset	33 74
+	bbox	27 5 33 73
+	delay	1000
+	frame	data/chars/kula/grab.gif
+
+
+anim grabattack
+	loop	0
+	offset	36 100
+	bbox	34 9 19 93
+	delay	4
+	frame	data/chars/kula/knee01.gif
+	frame	data/chars/kula/knee02.gif
+	delay	20
+	attack	48 35 34 26 6
+	frame	data/chars/kula/knee03.gif
+	attack	0
+	delay	4
+	frame	data/chars/kula/knee02.gif
+	frame	data/chars/kula/knee01.gif
+
+
+anim grabattack2
+	loop	0
+	offset	40 121
+	bbox	34 25 25 100
+	delay	5
+	frame	data/chars/kula/elbow01.gif
+	attack	51 4 27 51 8
+	frame	data/chars/kula/elbow02.gif
+	bbox	37 25 25 100
+	frame	data/chars/kula/elbow03.gif
+	attack	0
+	frame	data/chars/kula/elbow04.gif
+	bbox	40 25 25 100
+	frame	data/chars/kula/elbow05.gif
+	bbox	41 31 26 93
+	attack	57 37 27 35 10 1
+	frame	data/chars/kula/elbow06.gif
+	frame	data/chars/kula/elbow07.gif
+	attack	0
+	frame	data/chars/kula/elbow08.gif
+	frame	data/chars/kula/elbow09.gif
+	bbox	26 22 24 102
+	frame	data/chars/kula/elbow10.gif
+
+
+anim throw
+	loop	0
+	offset	40 60
+	delay	10
+	sound	data/sounds/kulahey.wav
+	frame	data/chars/kula/throw1.gif
+	delay	30
+	frame	data/chars/kula/throw2.gif
+	delay	10
+	frame	data/chars/kula/throw1.gif
+
+
+anim pain
+	loop	0
+	offset	31 89
+	bbox	12 0 36 90
+	delay	8
+	frame	data/chars/kula/pain01.gif
+	delay	50
+	frame	data/chars/kula/pain02.gif
+	delay	8
+	frame	data/chars/kula/pain01.gif
+
+
+anim fall
+	loop	0
+	offset	51 95
+#	attack	
+	delay	8
+	frame	data/chars/kula/fall00.gif
+	frame	data/chars/kula/fall01.gif
+	frame	data/chars/kula/fall02.gif
+	frame	data/chars/kula/fall03.gif
+	frame	data/chars/kula/fall04.gif
+
+
+anim rise
+	loop	0
+	offset	32 94
+	delay	10
+	frame	data/chars/kula/rise1.gif
+	frame	data/chars/kula/rise2.gif
+	frame	data/chars/kula/rise3.gif
+	frame	data/chars/kula/rise4.gif
+
+
+anim land
+	loop	0
+	offset	50 113
+	delay	25
+	bbox	40 42 17 73
+	frame	data/chars/kula/jump000.gif
+

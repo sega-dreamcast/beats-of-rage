@@ -1,0 +1,375 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Mandy
+health	100
+speed	9
+type	player
+shadow	3
+diesound data/sounds/eek.wav
+
+icon	data/chars/mary/icon.gif
+
+
+# To create an alternate colour version, enter the path to
+# an image in the original, and one in the alternative colourset.
+remap	data/chars/mary/stand1.gif data/chars/mary/alt1
+
+
+# Animation syntax:
+# First enter the name of the animation:
+#	anim	[name]				idle, walk, jump, etc
+#
+# Then add some other values, like so:
+# 	loop	[0/1]
+#	offset	x y					location of center,bottom
+#	delay	num					in 100th seconds
+#	bbox	x y width height			weak point
+#	attack	x y width height force drop long	attack rect, force, drop opponent, hurt longer
+#
+# Every time you specify "frame", a frame is appended to the animation,
+# using the settings you just specified. You can change all the values
+# at any time between adding frames, though changing "loop" again is
+# ofcourse essentially pointless.
+# All numeric values default to 0 if not specified.
+# 
+#	frame	[path]
+#
+# The maximum number of frames per animation is 32.
+# You may use GIF, PCX or BMP files.
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	27 95
+	bbox	10 5 34 94
+	frame	data/chars/mary/stand1.gif
+	frame	data/chars/mary/stand2.gif
+	frame	data/chars/mary/stand3.gif
+	frame	data/chars/mary/stand4.gif
+	frame	data/chars/mary/stand5.gif
+	frame	data/chars/mary/stand6.gif
+	frame	data/chars/mary/stand7.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	25 104
+	bbox	8 8 29 93
+	frame	data/chars/mary/walk01.gif
+	frame	data/chars/mary/walk02.gif
+	frame	data/chars/mary/walk03.gif
+	frame	data/chars/mary/walk04.gif
+	frame	data/chars/mary/walk05.gif
+	frame	data/chars/mary/walk06.gif
+	frame	data/chars/mary/walk07.gif
+	frame	data/chars/mary/walk08.gif
+	frame	data/chars/mary/walk09.gif
+	frame	data/chars/mary/walk10.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	41 95
+	frame	data/chars/mary/get1.gif
+	frame	data/chars/mary/get2.gif
+	frame	data/chars/mary/get3.gif
+	delay	30
+	frame	data/chars/mary/get4.gif
+	delay	5
+	frame	data/chars/mary/get3.gif
+	frame	data/chars/mary/get2.gif
+	frame	data/chars/mary/get1.gif
+
+
+
+anim attack1
+	loop	0
+	delay	4
+	bbox	13 2 31 98
+	offset	29 96
+	frame	data/chars/mary/punch1-1.gif
+	bbox	17 2 31 98
+	frame	data/chars/mary/punch1-2.gif
+	attack	41 10 28 25 5
+	frame	data/chars/mary/punch1-3.gif
+	attack	41 10 43 25 5
+	frame	data/chars/mary/punch1-4.gif
+	attack	0 0 0 0 0
+	delay	2
+	frame	data/chars/mary/punch1-3.gif
+	frame	data/chars/mary/punch1-2.gif
+
+
+
+anim attack2
+	loop	0
+	delay	5
+	offset	31 95
+	bbox	9 3 32 94
+	frame	data/chars/mary/punch2-1.gif
+	offset	36 95
+	bbox	20 7 32 91
+	move	5
+	frame	data/chars/mary/punch2-2.gif
+	offset	56 95
+	bbox	38 7 32 91
+	move	20
+	frame	data/chars/mary/punch2-3.gif
+	delay	8
+	bbox	40 7 36 92
+	attack	61 15 30 29 10
+	move	0
+	frame	data/chars/mary/punch2-4.gif
+	bbox	38 7 32 91
+	attack	0 0 0 0 0
+	frame	data/chars/mary/punch2-3.gif
+	offset	39 95
+	bbox	20 7 36 92
+	move	-25
+	frame	data/chars/mary/punch2-3.gif
+
+
+
+anim attack3
+	loop	0
+	delay	6
+	offset	33 97
+	bbox	16 10 34 89 15 1
+	frame	data/chars/mary/a3-01.gif
+	frame	data/chars/mary/a3-02.gif
+	attack	42 36 36 41
+	frame	data/chars/mary/a3-03.gif
+	attack	48 34 65 38 15 1
+	delay	8
+	frame	data/chars/mary/a3-04.gif
+	frame	data/chars/mary/a3-05.gif
+	attack	0 0 0 0 0
+	frame	data/chars/mary/a3-06.gif
+	bbox	24 18 34 81
+	frame	data/chars/mary/a3-07.gif
+	frame	data/chars/mary/a3-08.gif
+	bbox	22 4 34 81
+	frame	data/chars/mary/a3-09.gif
+
+anim special
+	loop	0
+	delay	5
+	offset	107 203
+	frame	data/chars/mary/super01.gif
+	blast	69 95 80 110 20 1
+	frame	data/chars/mary/super02.gif
+	frame	data/chars/mary/super03.gif
+	blast	59 95 100 110 20 1
+	frame	data/chars/mary/super04.gif
+	frame	data/chars/mary/super05.gif
+	blast	49 95 120 110 20 1
+	frame	data/chars/mary/super06.gif
+	frame	data/chars/mary/super07.gif
+	blast	0
+	frame	data/chars/mary/super08.gif
+	frame	data/chars/mary/super09.gif
+
+
+
+anim freespecial
+	jumpframe 0
+	loop	0
+	delay	5
+	offset	45 99
+	bbox	29 22 37 61
+	sound	data/sounds/mary_ffp.wav
+	frame	data/chars/mary/special1.gif
+	bbox	36 37 39 50
+	frame	data/chars/mary/special2.gif
+	bbox	22 37 39 50
+	frame	data/chars/mary/special3.gif
+	frame	data/chars/mary/special4.gif
+	bbox	21 26 29 60
+	attack	38 28 57 49 20 1
+	delay	8
+	frame	data/chars/mary/special5.gif
+	frame	data/chars/mary/special6.gif
+	bbox	29 12 27 53
+	frame	data/chars/mary/special7.gif
+	bbox	29 41 27 53
+	attack	0 0 0 0 0 0
+	delay	15
+	offset	45 93
+	frame	data/chars/mary/special8.gif
+	delay	8
+	bbox	31 22 31 69
+	frame	data/chars/mary/special9.gif
+
+
+
+
+anim jump
+	loop	0
+	offset	32 111
+	delay	6
+	bbox	19 29 33 84
+	frame	data/chars/mary/jump01.gif
+	bbox	16 14 34 101
+	frame	data/chars/mary/jump02.gif
+	frame	data/chars/mary/jump03.gif
+	frame	data/chars/mary/jump04.gif
+	bbox	17 19 34 82
+	frame	data/chars/mary/jump05.gif
+	bbox	16 28 34 69
+	frame	data/chars/mary/jump06.gif
+	frame	data/chars/mary/jump07.gif
+	frame	data/chars/mary/jump08.gif
+	frame	data/chars/mary/jump09.gif
+	bbox	16 20 34 88
+	frame	data/chars/mary/jump10.gif
+	bbox	14 42 27 73
+	delay	1000
+	bbox	41 26 21 54
+	frame	data/chars/mary/jump11.gif
+
+
+
+anim jumpattack
+	loop	0
+	offset	32 70
+	delay	7
+	bbox	13 3 32 54
+	frame	data/chars/mary/jkick1.gif
+	attack	37 31 34 32 6 1
+	frame	data/chars/mary/jkick2.gif
+	delay	1000
+	attack	30 30 62 46 6 1
+	bbox	12 3 27 54
+	frame	data/chars/mary/jkick3.gif
+	delay	6
+	attack	0 0 0 0 0 0
+	frame	data/chars/mary/jkick4.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	22 66
+	bbox	10 5 28 53
+	frame	data/chars/mary/jpunch1.gif
+	attack	33 16 32 37 6 0
+	delay	1000
+	frame	data/chars/mary/jpunch2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/mary/jpunch1.gif
+
+
+anim grab
+	loop	0
+	offset	33 83
+	bbox	26 6 27 71
+	delay	1000
+	frame	data/chars/mary/grab.gif
+
+
+anim grabattack
+	loop	0
+	offset	33 98
+	bbox	34 24 19 93
+	delay	6
+	frame	data/chars/mary/knee1.gif
+	delay	20
+	attack	47 42 30 31 6
+	frame	data/chars/mary/knee2.gif
+	attack	0
+	delay	6
+	frame	data/chars/mary/knee1.gif
+
+
+anim grabattack2
+	loop	0
+	offset	33 117
+	bbox	30 28 24 91
+	delay	5
+	frame	data/chars/mary/slap01.gif
+	frame	data/chars/mary/slap02.gif
+#	attack	50 44 33 41 16 1
+	frame	data/chars/mary/slap03.gif
+	attack	50 41 44 30 16 1
+	frame	data/chars/mary/slap04.gif
+	attack	47 9 46 41 16 1
+	frame	data/chars/mary/slap05.gif
+	frame	data/chars/mary/slap06.gif
+	frame	data/chars/mary/slap07.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/mary/slap06.gif
+	frame	data/chars/mary/slap05.gif
+	frame	data/chars/mary/slap04.gif
+	frame	data/chars/mary/slap08.gif
+	frame	data/chars/mary/slap09.gif
+
+
+anim throw
+	loop	0
+	offset	64 78
+	delay	5
+	sound	data/sounds/marytoss.wav
+	frame	data/chars/mary/throw1.gif
+	frame	data/chars/mary/throw2.gif
+	frame	data/chars/mary/throw3.gif
+	frame	data/chars/mary/throw4.gif
+	frame	data/chars/mary/throw5.gif
+	frame	data/chars/mary/throw6.gif
+	frame	data/chars/mary/throw7.gif
+	offset	42 64
+	delay	5
+	frame	data/chars/mary/rise1.gif
+	frame	data/chars/mary/rise2.gif
+	frame	data/chars/mary/rise3.gif
+	frame	data/chars/mary/rise4.gif
+
+anim pain
+	loop	0
+	offset	34 92
+	bbox	17 5 26 90
+	delay	8
+	frame	data/chars/mary/hurt1.gif
+	delay	50
+	bbox	10 5 26 90
+	frame	data/chars/mary/hurt2.gif
+	delay	8
+	bbox	17 5 26 90
+	frame	data/chars/mary/hurt1.gif
+
+
+anim fall
+	loop	0
+	offset	57 58
+	attack	
+	delay	8
+	attack	32 22 39 41 10 1
+	frame	data/chars/mary/fall1.gif
+	attack	10 36 62 28 10 1
+	frame	data/chars/mary/fall2.gif
+	attack	11 35 74 23 10 1
+	frame	data/chars/mary/fall3.gif
+	attack	19 30 49 32 10 1
+	frame	data/chars/mary/fall4.gif
+	attack	8 44 99 16 10 1
+	frame	data/chars/mary/fall5.gif
+
+
+anim rise
+	loop	0
+	offset	42 64
+	delay	10
+	frame	data/chars/mary/rise1.gif
+	frame	data/chars/mary/rise2.gif
+	frame	data/chars/mary/rise3.gif
+	frame	data/chars/mary/rise4.gif
+
+
+
+anim land
+	loop	0
+	offset	32 111
+	delay	25
+	bbox	19 29 33 84
+	frame	data/chars/mary/jump01.gif

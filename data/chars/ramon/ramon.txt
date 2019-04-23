@@ -1,0 +1,29 @@
+# It's that dipshit, Ramon!
+
+name	Ramon
+health	10
+speed	1
+type	enemy
+shadow	0
+diesound data/sounds/die1.wav
+
+
+anim idle
+	loop	0
+	offset	25 80
+	frame	data/chars/ramon/dipshit.gif
+
+anim walk
+	loop	0
+	offset	25 80
+	frame	data/chars/ramon/dipshit.gif
+
+anim pain
+	loop	0
+	offset	25 80
+	frame	data/chars/ramon/dipshit.gif
+
+anim fall
+	loop	0
+	offset	25 80
+	frame	data/chars/ramon/dipshit.gif

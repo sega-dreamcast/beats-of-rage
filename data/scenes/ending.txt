@@ -1,0 +1,10 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+music		data/music/time.bor 1
+animation	data/scenes/falla.gif 0 0
+animation	data/scenes/fallb.gif 0 0
+animation	data/scenes/consp.gif 0 0
+animation	data/scenes/creds.gif 0 0
+animation	data/scenes/thanks.gif 0 0

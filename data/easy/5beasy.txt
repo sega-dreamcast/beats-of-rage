@@ -1,0 +1,525 @@
+music		data/music/goarge.bor
+bossmusic	data/music/1boss.bor
+
+background	data/bgs/factory/back.gif
+panel		data/bgs/factory/p00.gif	none	none
+panel		data/bgs/factory/p01.gif	none	none
+panel		data/bgs/factory/p02.gif	none	none
+panel		data/bgs/factory/p03.gif	none	none
+
+order		abcdabcdabcdabcdabcdabcd
+
+#hole	490
+
+
+
+spawn	Drum
+item	1up
+coords	210 160
+at	0
+
+spawn	Drum
+item	meat
+coords	300 160
+at	0
+
+spawn	Steamer
+coords	120 155 -5
+at	0
+
+spawn	Angel
+map	4
+coords	350 180
+health	90
+at	10
+
+spawn	K'
+coords	350 200
+health	60
+at	10
+
+#spawn	Billy
+#map	1
+#coords	-30 220
+#health	110
+#at	10
+
+
+spawn	yashiro
+map	4
+coords	350 160
+health	70
+at	400
+
+spawn	Angel
+map	3
+coords	350 200
+health	80
+at	400
+
+spawn	Angel
+map	2
+coords	-30 220
+health	80
+at	400
+
+wait
+at	750
+
+spawn	Steamer
+coords	380 241
+at	0
+
+
+group	3 3
+at	750
+
+spawn	Angel
+map	1
+coords	-30 170
+health	80
+at	750
+
+#spawn	Angel
+#map	6
+#coords	-30 220
+#health	120
+#at	750
+
+spawn	Angel
+map	5
+coords	350 190
+health	80
+at	750
+
+spawn	Ralf
+map	5
+coords	-30 190
+health	60
+at	750
+
+spawn	Ralf
+map	3
+coords	-30 220
+health	70
+at	750
+
+spawn	Shermie
+map	4
+coords	-30 170
+health	50
+at	750
+
+
+group	1 1
+at	750
+
+group	100 100
+at	750
+
+spawn	Eiji
+alias	Sho
+coords	380 170
+health	120
+at	750
+
+#spawn	Eiji
+#alias	Shin_Chan
+#map	1
+#coords	-30 190
+#health	150
+#at	750
+
+spawn	Shermie
+alias	Judi
+coords	-30 190
+health	50
+at	750
+
+#----------------------
+
+spawn	Steamer
+coords	380 155 -5
+at	800
+
+spawn	Drum
+item	Apple
+coords	340 160
+at	800
+
+spawn	Jhun
+alias	Dr_Cheese
+map	1
+coords	380 195
+health	100
+at	850
+
+spawn	K'
+map	1
+coords	-30 160
+health	60
+at	850
+
+spawn	K'
+coords	-30 230
+health	70
+at	850
+
+spawn	Drum
+2pitem	1up
+coords	340 160
+at	1200
+
+spawn	Drum
+2pitem	apple
+coords	380 162
+at	1200
+
+
+spawn	Yashiro
+map	3
+coords	380 170
+health	70
+at	1250
+
+spawn	Yashiro
+map	2
+coords	380 220
+health	70
+at	1250
+
+#spawn	Yashiro
+#map	4
+#coords	370 195
+#health	70
+#at	1250
+
+
+spawn	Ralf
+map	4
+coords	370 165
+health	80
+at	1500
+
+spawn	Angel
+map	4
+coords	-30 195
+health	100
+at	1500
+
+spawn	Ralf
+map	4
+coords	370 225
+health	70
+at	1500
+
+wait
+at	1600
+
+group	1 1
+at	1600
+
+group	1 4
+at	1600
+
+spawn	K'
+coords	370 160
+health	60
+at	1600
+
+spawn	K'
+map	1
+coords	380 165
+health	80
+at	1600
+
+spawn	K'
+coords	370 170
+health	70
+at	1600
+
+spawn	K'
+coords	-30 195
+health	60
+at	1600
+
+group	1 3
+at	1600
+
+spawn	Shermie
+coords	-30 220
+health	60
+at	1600
+
+spawn	Shermie
+map	1
+coords	380 185
+health	60
+at	1600
+
+#spawn	Shermie
+#map	3
+#coords	-30 165
+#health	60
+#at	1600
+
+spawn	Joe
+alias	Parakeet
+map	3
+coords	-30 165
+health	130
+at	1600
+
+#spawn	Joe
+#alias	Heron
+#map	2
+#coords	380 195
+#health	130
+#at	1600
+
+spawn	Joe
+alias	Blackbird
+coords	380 210
+health	130
+at	1600
+
+#-----------------------
+
+group	100 100
+at	1650
+
+spawn	Steamer
+coords	380 155 -5
+at	0
+
+spawn	Angel
+map	2
+coords	380 210
+health	80
+at	1700
+
+spawn	Angel
+map	1
+coords	380 160
+health	90
+at	1700
+
+spawn	Yashiro
+map	2
+coords	380 230
+health	70
+at	1720
+
+
+spawn	Ralf
+map	2
+coords	380 200
+health	60
+at	2000
+
+spawn	Ralf
+map	1
+coords	380 160
+health	60
+at	2000
+
+#spawn	Ralf
+#map	3
+#coords	370 230
+#health	60
+#at	2000
+
+spawn	Drum
+item	meat
+coords	370 229
+at	2000
+
+spawn	Drum
+2pitem	meat
+coords	380 230
+at	2030
+
+wait
+at	2100
+
+group	1 3
+at	2100
+
+spawn	Yashiro
+map	3
+coords	-30 230
+health	70
+at	2100
+
+spawn	Yashiro
+map	3
+coords	-30 160
+health	70
+at	2100
+
+spawn	Shermie
+map	3
+coords	380 195
+health	60
+at	2100
+
+spawn	Eiji
+alias	Shao_Kahn
+map	4
+coords	-30 160
+health	120
+at	2100
+
+#spawn	Eiji
+#alias	Musashi
+#map	3
+#coords	-30 230
+#health	120
+#at	2100
+
+spawn	Yamazaki
+alias	Barbon_Jr.
+map	1
+coords	380 195
+health	150
+at	2100
+
+#----------------
+
+wait
+at	2300
+
+group	3 3
+at	2200
+
+spawn	K9999
+alias	Experiment_4-9
+boss	1
+coords	370 195
+health	500
+at	2200
+
+#---re-enforcements---
+
+spawn	Yashiro
+map	0
+coords	380 220
+at	0
+
+spawn	Ralf
+map	0
+coords	380 220
+at	0
+
+spawn	Shermie
+map	0
+coords	-30 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Joe
+map	0
+coords	380 220
+at	0
+
+spawn	Jhun
+map	0
+coords	-30 220
+at	0
+
+spawn	Ralf
+map	0
+coords	-30 220
+at	0
+
+spawn	Eiji
+map	0
+coords	380 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Billy
+map	0
+coords	380 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	-30 220
+at	0
+
+spawn	Ralf
+map	0
+coords	-30 220
+at	0
+
+spawn	Shermie
+map	0
+coords	380 220
+at	0
+
+spawn	K'
+map	0
+coords	-30 220
+at	0
+
+spawn	Angel
+map	0
+coords	380 220
+at	0
+
+spawn	Joe
+map	0
+coords	380 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	-30 220
+at	0
+
+spawn	Ralf
+map	0
+coords	-30 220
+at	0
+
+spawn	Shermie
+map	0
+coords	380 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	380 220
+at	0
+
+spawn	Joe
+map	0
+coords	-30 220
+at	0
+
+
+

@@ -1,0 +1,144 @@
+name	Mrbig
+health	300
+speed	8
+type	enemy
+shadow	4
+icon	data/chars/mrbig/icon.gif
+diesound data/sounds/die2.wav
+
+remap	data/chars/mrbig/idle1.gif	data/chars/mrbig/alt1.gif
+
+anim idle
+	loop	1
+	offset	36 115
+	bbox	10 10 51 109
+	delay	9
+	frame	data/chars/mrbig/idle1.gif
+	frame	data/chars/mrbig/idle2.gif
+	frame	data/chars/mrbig/idle3.gif
+	frame	data/chars/mrbig/idle4.gif
+	frame	data/chars/mrbig/idle5.gif
+	frame	data/chars/mrbig/idle4.gif
+	frame	data/chars/mrbig/idle3.gif
+	frame	data/chars/mrbig/idle2.gif
+
+
+anim walk
+	loop	1
+	offset	45 133
+	bbox	33 16 29 118
+	delay	9
+	frame	data/chars/mrbig/walk1.gif
+	frame	data/chars/mrbig/walk2.gif
+	frame	data/chars/mrbig/walk3.gif
+	frame	data/chars/mrbig/walk4.gif
+	frame	data/chars/mrbig/walk5.gif
+	frame	data/chars/mrbig/walk6.gif
+	frame	data/chars/mrbig/walk7.gif
+	frame	data/chars/mrbig/walk8.gif
+
+
+anim pain
+	loop	0
+	offset	42 110
+	bbox	18 10 51 100
+	delay	12
+	frame	data/chars/mrbig/hit1.gif
+	delay	50
+	frame	data/chars/mrbig/hit2.gif
+	delay	12
+	frame	data/chars/mrbig/hit1.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	50 130
+	frame	data/chars/mrbig/fall1.gif
+	attack	29 34 69 58 15 1
+	frame	data/chars/mrbig/fall2.gif
+	attack	35 98 98 34 15 1
+	frame	data/chars/mrbig/fall3.gif
+	frame	data/chars/mrbig/fall4.gif
+
+anim rise
+	loop	0
+	offset	55 109
+	delay	10
+	frame	data/chars/mrbig/rise1.gif
+	frame	data/chars/mrbig/rise2.gif
+	frame	data/chars/mrbig/rise3.gif
+	frame	data/chars/mrbig/rise4.gif
+	frame	data/chars/mrbig/rise5.gif
+
+
+anim attack1
+	range	10 120
+	loop	0
+	delay	5
+	offset	90 179
+	bbox	62 58 56 125
+	frame	data/chars/mrbig/punch01.gif
+	bbox	65 43 42 139
+	frame	data/chars/mrbig/punch02.gif
+	frame	data/chars/mrbig/punch03.gif
+	frame	data/chars/mrbig/punch04.gif
+	bbox	47 74 59 107
+	attack	30 38 15 69 20 1
+	frame	data/chars/mrbig/punch05.gif
+	bbox	41 84 43 94
+	attack	15 82 64 38 20 1
+	frame	data/chars/mrbig/punch06.gif
+	bbox	67 77 56 102
+	attack	124 88 82 38 20 1
+	frame	data/chars/mrbig/punch07.gif
+	frame	data/chars/mrbig/punch08.gif
+	frame	data/chars/mrbig/punch09.gif
+	attack	0 0 0 0 0
+	bbox	70 72 49 108
+	frame	data/chars/mrbig/punch10.gif
+	frame	data/chars/mrbig/punch11.gif
+	frame	data/chars/mrbig/punch12.gif
+	frame	data/chars/mrbig/punch13.gif
+	frame	data/chars/mrbig/punch14.gif
+
+
+anim attack2
+	range	10 120
+	loop	0
+	delay	5
+	offset	78 171
+	bbox	63 47 40 126
+	frame	data/chars/mrbig/spin01.gif
+	frame	data/chars/mrbig/spin02.gif
+	frame	data/chars/mrbig/spin03.gif
+	frame	data/chars/mrbig/spin04.gif
+	attack	51 48 96 36 14 0
+	frame	data/chars/mrbig/spin05.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/mrbig/spin06.gif
+	attack	3 54 105 36 14 0
+	frame	data/chars/mrbig/spin07.gif
+	attack	0 0
+	frame	data/chars/mrbig/spin08.gif
+	attack	40 55 121 36 14 0
+	frame	data/chars/mrbig/spin09.gif
+	attack	0 0
+	frame	data/chars/mrbig/spin10.gif
+	attack	3 54 105 36 14 0
+	frame	data/chars/mrbig/spin07.gif
+	attack	0 0
+	frame	data/chars/mrbig/spin08.gif
+	attack	40 55 121 36 14 1
+	frame	data/chars/mrbig/spin09.gif
+	frame	data/chars/mrbig/spin10.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/mrbig/spin11.gif
+	bbox	63 66 65 107
+	frame	data/chars/mrbig/spin12.gif
+	frame	data/chars/mrbig/spin13.gif
+	bbox	54 68 58 106
+	frame	data/chars/mrbig/spin14.gif
+	frame	data/chars/mrbig/spin15.gif
+	frame	data/chars/mrbig/spin16.gif
+	frame	data/chars/mrbig/spin17.gif
+

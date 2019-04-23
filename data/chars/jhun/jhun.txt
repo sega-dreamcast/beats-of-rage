@@ -1,0 +1,119 @@
+name	Jhun
+health	100
+speed	11
+type	enemy
+shadow	4
+icon	data/chars/jhun/icon.gif
+diesound data/sounds/die2.wav
+
+
+remap	data/chars/jhun/idle00.gif data/chars/jhun/map1.gif
+remap	data/chars/jhun/idle00.gif data/chars/jhun/map2.gif
+
+
+anim idle
+	loop	1
+	offset	27 118
+	bbox	16 5 29 116
+	delay	20
+	frame	data/chars/jhun/idle00.gif
+	frame	data/chars/jhun/idle01.gif
+	frame	data/chars/jhun/idle02.gif
+	frame	data/chars/jhun/idle03.gif
+	frame	data/chars/jhun/idle02.gif
+	frame	data/chars/jhun/idle01.gif
+
+anim walk
+	loop	1
+	offset	34 120
+	bbox	17 5 38 116
+	delay	9
+	frame	data/chars/jhun/walk00.gif
+	frame	data/chars/jhun/walk01.gif
+	frame	data/chars/jhun/walk02.gif
+	frame	data/chars/jhun/walk03.gif
+	frame	data/chars/jhun/walk04.gif
+	frame	data/chars/jhun/walk05.gif
+	frame	data/chars/jhun/walk06.gif
+	frame	data/chars/jhun/walk07.gif
+
+anim pain
+	loop	0
+	offset	52 114
+	bbox	36 6 31 110
+	delay	10
+	frame	data/chars/jhun/pain00.gif
+	delay	25
+	bbox	19 14 44 102
+	frame	data/chars/jhun/pain01.gif
+	delay	10
+	bbox	36 6 31 110
+	frame	data/chars/jhun/pain00.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	54 95
+	attack	32 7 72 82  12 1
+	frame	data/chars/jhun/fall00.gif
+	attack	18 31 93 57 12 1
+	frame	data/chars/jhun/fall01.gif
+	attack	14 35 95 50 12 1
+	frame	data/chars/jhun/fall02.gif
+	attack	5 77 113 17 12 1
+	frame	data/chars/jhun/fall03.gif
+
+anim rise
+	loop	0
+	offset	54 115
+	delay	15
+	frame	data/chars/jhun/rise00.gif
+	frame	data/chars/jhun/rise01.gif
+	frame	data/chars/jhun/rise02.gif
+	frame	data/chars/jhun/rise03.gif
+	frame	data/chars/jhun/rise04.gif
+	frame	data/chars/jhun/rise05.gif
+
+anim attack1
+	range	10 90
+	loop	0
+	delay	7
+	offset	47 110
+	bbox	25 4 38 108
+	frame	data/chars/jhun/kick00.gif
+	bbox	25 9 38 103
+	attack	47 34 33 36 10
+	frame	data/chars/jhun/kick01.gif
+	bbox	15 9 38 103
+	attack	50 30 69 19 10
+	delay	15
+	frame	data/chars/jhun/kick02.gif
+	delay	7
+	bbox	25 9 38 103
+	attack	0
+	frame	data/chars/jhun/kick01.gif
+	bbox	25 4 38 108
+	frame	data/chars/jhun/kick00.gif
+
+
+anim jumpattack
+	loop	0
+	offset	35 138
+	delay	10
+	bbox	22 24 34 120
+	frame	data/chars/jhun/jumpk00.gif
+	bbox	26 34 30 85
+	frame	data/chars/jhun/jumpk01.gif
+	bbox	25 45 34 60
+	frame	data/chars/jhun/jumpk02.gif
+	frame	data/chars/jhun/jumpk03.gif
+	attack	51 78 67 35 12 1
+	frame	data/chars/jhun/jumpk04.gif
+
+
+#anim land
+#	loop	0
+#	offset	35 138
+#	delay	50
+#	bbox	19 67 44 71
+

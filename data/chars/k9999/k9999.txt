@@ -1,0 +1,184 @@
+name	K9999
+health	300
+speed	10
+type	enemy
+shadow	3
+icon	data/chars/k9999/icon.gif
+diesound data/sounds/die2.wav
+
+
+remap	data/chars/k9999/map0.gif data/chars/k9999/map1.gif
+
+
+anim idle
+	loop	1
+	offset	28 114
+	bbox	18 7 24 109
+	delay	12
+	frame	data/chars/k9999/idle00.gif
+	frame	data/chars/k9999/idle01.gif
+	frame	data/chars/k9999/idle02.gif
+	frame	data/chars/k9999/idle03.gif
+	frame	data/chars/k9999/idle04.gif
+	frame	data/chars/k9999/idle05.gif
+	frame	data/chars/k9999/idle04.gif
+	frame	data/chars/k9999/idle03.gif
+	frame	data/chars/k9999/idle02.gif
+	frame	data/chars/k9999/idle01.gif
+
+anim walk
+	loop	1
+	offset	34 109
+	bbox	25 2 22 109
+	delay	8
+	frame	data/chars/k9999/walk00.gif
+	frame	data/chars/k9999/walk01.gif
+	frame	data/chars/k9999/walk02.gif
+	frame	data/chars/k9999/walk03.gif
+	frame	data/chars/k9999/walk04.gif
+	frame	data/chars/k9999/walk05.gif
+	frame	data/chars/k9999/walk06.gif
+	frame	data/chars/k9999/walk07.gif
+	frame	data/chars/k9999/walk08.gif
+	frame	data/chars/k9999/walk09.gif
+	frame	data/chars/k9999/walk10.gif
+	frame	data/chars/k9999/walk11.gif
+	frame	data/chars/k9999/walk12.gif
+	frame	data/chars/k9999/walk13.gif
+
+anim pain
+	loop	0
+	offset	39 107
+	bbox	22 3 47 105
+	delay	4
+	frame	data/chars/k9999/pain00.gif
+	delay	16
+	frame	data/chars/k9999/pain01.gif
+	delay	8
+	frame	data/chars/k9999/pain00.gif
+
+
+anim fall
+	loop	0
+	delay	10
+	offset	52 96
+	attack	37 9 43 64 15 1
+	frame	data/chars/k9999/fall00.gif
+	attack	22 38 64 34 15 1
+	frame	data/chars/k9999/fall01.gif
+	attack	15 63 76 35 15 1
+	frame	data/chars/k9999/fall02.gif
+	attack	3 81 100 21 15 1
+	frame	data/chars/k9999/fall03.gif
+
+anim rise
+	loop	0
+	offset	52 96
+	delay	12
+	frame	data/chars/k9999/rise00.gif
+	frame	data/chars/k9999/rise01.gif
+	frame	data/chars/k9999/rise02.gif
+	frame	data/chars/k9999/rise03.gif
+
+
+anim attack1
+	range	1 90
+	loop	0
+	delay	4
+	offset	37 110
+#	bbox	18 17 35 95
+	sound	data/sounds/drill.wav
+	frame	data/chars/k9999/punch00.gif
+#	bbox	22 28 35 84
+	frame	data/chars/k9999/punch01.gif
+#	bbox	30 34 35 78
+	attack	17 25 63 10 20 0
+	frame	data/chars/k9999/punch02.gif
+	frame	data/chars/k9999/punch03.gif
+	bbox	30 34 35 78
+	frame	data/chars/k9999/punch04.gif
+	frame	data/chars/k9999/punch05.gif
+	frame	data/chars/k9999/punch06.gif
+	frame	data/chars/k9999/punch07.gif
+	frame	data/chars/k9999/punch08.gif
+	frame	data/chars/k9999/punch09.gif
+	bbox	30 22 35 90
+	attack	0
+	frame	data/chars/k9999/punch10.gif
+	bbox	24 16 31 96
+	frame	data/chars/k9999/punch11.gif
+
+
+
+anim special
+	loop	0
+	delay	4
+	offset	73 187
+	sound	data/sounds/maxboom.wav
+	frame	data/chars/k9999/orb00.gif
+	frame	data/chars/k9999/orb01.gif
+	frame	data/chars/k9999/orb02.gif
+	frame	data/chars/k9999/orb03.gif
+	blast	10 17 192 178 28
+	frame	data/chars/k9999/orb04.gif
+	frame	data/chars/k9999/orb05.gif
+	frame	data/chars/k9999/orb06.gif
+	frame	data/chars/k9999/orb07.gif
+	frame	data/chars/k9999/orb08.gif
+	frame	data/chars/k9999/orb09.gif
+	frame	data/chars/k9999/orb10.gif
+	frame	data/chars/k9999/orb11.gif
+	frame	data/chars/k9999/orb12.gif
+	frame	data/chars/k9999/orb13.gif
+	frame	data/chars/k9999/orb14.gif
+	frame	data/chars/k9999/orb15.gif
+	frame	data/chars/k9999/orb16.gif
+	attack	0
+	frame	data/chars/k9999/orb17.gif
+	frame	data/chars/k9999/orb18.gif
+	frame	data/chars/k9999/orb19.gif
+	frame	data/chars/k9999/orb20.gif
+	frame	data/chars/k9999/orb21.gif
+	frame	data/chars/k9999/orb22.gif
+	frame	data/chars/k9999/orb23.gif
+	frame	data/chars/k9999/orb24.gif
+
+
+
+anim upper
+	loop	0
+	delay	3
+	offset	53 130
+	bbox	63 23 27 109
+	frame	data/chars/k9999/fire00.gif
+	frame	data/chars/k9999/fire01.gif
+	frame	data/chars/k9999/fire02.gif
+	bbox	53 48 29 84
+	frame	data/chars/k9999/fire03.gif
+	bbox	31 61 45 72
+	frame	data/chars/k9999/fire04.gif
+	bbox	22 70 36 63
+	delay	5
+	burn	37 43 66 67 16 1
+	frame	data/chars/k9999/fire05.gif
+	burn	33 34 86 80 16 1
+	frame	data/chars/k9999/fire06.gif
+	burn	31 23 102 80 16 1
+	frame	data/chars/k9999/fire07.gif
+	burn	31 14 102 80 16 1
+	frame	data/chars/k9999/fire08.gif
+	frame	data/chars/k9999/fire09.gif
+	frame	data/chars/k9999/fire10.gif
+	attack	0
+	frame	data/chars/k9999/fire11.gif
+	frame	data/chars/k9999/fire12.gif
+	bbox	37 64 36 68
+#	frame	data/chars/k9999/fire13.gif
+	frame	data/chars/k9999/fire14.gif
+	frame	data/chars/k9999/fire15.gif
+	bbox	41 54 38 78
+	frame	data/chars/k9999/fire16.gif
+	bbox	53 36 31 96
+	frame	data/chars/k9999/fire17.gif
+
+

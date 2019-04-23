@@ -1,0 +1,190 @@
+name	Robert
+health	200
+speed	7
+type	enemy
+shadow	4
+icon	data/chars/robert/icon.gif
+diesound data/sounds/die2.wav
+
+
+remap	data/chars/robert/stand01.gif data/chars/robert/map1.gif
+
+
+#Important addition
+load	Knife
+
+
+
+anim idle
+	loop	1
+	offset	30 120
+	bbox	9 17 45 106
+	delay	10
+	frame	data/chars/robert/stand01.gif
+	frame	data/chars/robert/stand02.gif
+	frame	data/chars/robert/stand03.gif
+	frame	data/chars/robert/stand04.gif
+	bbox	14 15 45 106
+	frame	data/chars/robert/stand05.gif
+	frame	data/chars/robert/stand06.gif
+	frame	data/chars/robert/stand07.gif
+	frame	data/chars/robert/stand08.gif
+	frame	data/chars/robert/stand09.gif
+	frame	data/chars/robert/stand10.gif
+
+anim walk
+	loop	1
+	offset	30 115
+	bbox	11 12 41 105
+	delay	8
+	frame	data/chars/robert/walk01.gif
+	frame	data/chars/robert/walk02.gif
+	frame	data/chars/robert/walk03.gif
+	frame	data/chars/robert/walk04.gif
+	frame	data/chars/robert/walk05.gif
+
+anim pain
+	loop	0
+	offset	37 104
+	bbox	13 10 38 99
+	delay	12
+	frame	data/chars/robert/hurt1.gif
+	delay	50
+	frame	data/chars/robert/hurt2.gif
+	delay	12
+	frame	data/chars/robert/hurt3.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	55 105
+	attack	29 38 45 28 15 1
+	frame	data/chars/robert/fall1.gif
+	attack	17 51 55 19 15 1
+	offset	55 80
+	frame	data/chars/robert/fall2.gif
+	offset	55 74
+	frame	data/chars/robert/fall3.gif
+	offset	55 72
+	attack	14 57 80 15 15 1
+	frame	data/chars/robert/fall4.gif
+
+anim rise
+	loop	0
+	delay	15
+	offset	47 109
+	frame	data/chars/robert/rise1.gif
+	delay	10
+	frame	data/chars/robert/rise1.gif
+	frame	data/chars/robert/rise1.gif
+
+
+anim attack1
+	range	180 300
+	throwframe	11
+	loop	0
+	delay	7
+	offset	49 125
+	bbox	28 22 43 103
+	frame	data/chars/robert/shoot01.gif
+	frame	data/chars/robert/shoot02.gif
+	frame	data/chars/robert/shoot03.gif
+	frame	data/chars/robert/shoot04.gif
+	bbox	15 34 53 93
+	frame	data/chars/robert/shoot05.gif
+	bbox	8 43 57 84
+	frame	data/chars/robert/shoot06.gif
+	frame	data/chars/robert/shoot07.gif
+	frame	data/chars/robert/shoot08.gif
+	frame	data/chars/robert/shoot09.gif
+	bbox	21 41 52 88
+	frame	data/chars/robert/shoot10.gif
+	bbox	32 34 47 95
+	frame	data/chars/robert/shoot11.gif
+	bbox	45 35 54 94
+	frame	data/chars/robert/shoot12.gif
+	frame	data/chars/robert/shoot13.gif
+	frame	data/chars/robert/shoot14.gif
+	frame	data/chars/robert/shoot15.gif
+	frame	data/chars/robert/shoot16.gif
+	bbox	37 25 43 105
+	frame	data/chars/robert/shoot17.gif
+
+anim attack2
+	range	0 70
+	loop	0
+	delay	7
+	offset	39 113
+	bbox	18 12 36 104
+	frame	data/chars/robert/kick01.gif
+	bbox	18 30 36 85
+	frame	data/chars/robert/kick02.gif
+	frame	data/chars/robert/kick03.gif
+	bbox	28 30 36 85
+	frame	data/chars/robert/kick04.gif
+	offset	53 113
+	frame	data/chars/robert/kick05.gif
+	bbox	36 32 42 95
+	attack	79 11 62 45 15 1
+	frame	data/chars/robert/kick06.gif
+	frame	data/chars/robert/kick07.gif
+	attack	69 45 57 33 15 1
+	frame	data/chars/robert/kick08.gif
+	offset	60 113
+	bbox	37 6 43 110
+	attack	0 0 0 0 0 0
+	frame	data/chars/robert/kick09.gif
+	frame	data/chars/robert/kick10.gif
+
+anim attack3
+	range	0 70
+	loop	0
+	delay	7
+	offset	37 116
+	bbox	22 13
+	frame	data/chars/robert/punch01.gif
+	attack	57 28 36 36 15 1
+	frame	data/chars/robert/punch02.gif
+	attack	64 7 37 41 15 1
+	frame	data/chars/robert/punch03.gif
+	frame	data/chars/robert/punch04.gif
+	frame	data/chars/robert/punch05.gif
+	attack	57 28 36 36 15 1
+	frame	data/chars/robert/punch02.gif
+	attack	0 0 0 0 0 0 
+	frame	data/chars/robert/punch07.gif
+
+
+anim upper
+	loop	0
+	jumpframe 2
+	delay	10
+	offset	50 138
+	bbox	34 55 43 86
+	move	5
+	frame	data/chars/robert/upper01.gif
+	bbox	40 49 42 95
+	attack	74 52 35 47 15 1
+	frame	data/chars/robert/upper02.gif
+	move	0
+	bbox	33 44 38 106
+	attack	33 11 44 71 15 1
+	delay	15
+	frame	data/chars/robert/upper03.gif
+	bbox	33 44 31 106
+	frame	data/chars/robert/upper04.gif
+	frame	data/chars/robert/upper05.gif
+	frame	data/chars/robert/upper06.gif
+	attack	0 0 0 0 0 0
+	bbox	39 55 35 101
+	delay	30
+	frame	data/chars/robert/upper07.gif
+	delay	10
+	bbox	41 71 38 89
+	frame	data/chars/robert/upper08.gif
+	bbox	37 57 40 98
+	frame	data/chars/robert/upper09.gif
+
+
+
+

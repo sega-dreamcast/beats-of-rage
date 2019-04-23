@@ -1,0 +1,174 @@
+# Boat
+music		data/music/1boss.bor
+rock		1
+
+background	data/bgs/boat3/back.gif
+panel		data/bgs/boat3/mid.gif	none	data/bgs/boat3/screen.gif
+frontpanel	data/bgs/boat3/front.gif
+order		a
+
+
+# ---------------------
+
+spawn	furnace
+coords	0 240
+flip	1
+at	0
+
+spawn	steamer
+coords	115 241 49
+at	0
+
+spawn	1up
+coords	160 230
+at	0
+
+spawn	Crate
+flip	1
+item	meat
+coords	200 171
+at	0
+
+spawn	Crate
+flip	1
+2pitem	meat
+coords	240 170
+at	0
+
+group	2 3
+at	0
+
+spawn	Robert
+alias	Steven
+health	300
+boss	1
+map	0
+coords	580 220
+at	0
+
+
+
+
+
+spawn	Yashiro
+map	0
+coords	380 220
+at	0
+
+spawn	Ralf
+map	0
+coords	380 220
+at	0
+
+spawn	Shermie
+map	0
+coords	-30 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Joe
+map	0
+coords	380 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	380 220
+at	0
+
+spawn	Ralf
+map	0
+coords	-30 220
+at	0
+
+spawn	Shermie
+map	0
+coords	-30 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	380 220
+at	0
+
+spawn	Joe
+map	0
+coords	-30 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	380 220
+at	0
+
+spawn	Ralf
+map	0
+coords	-30 220
+at	0
+
+spawn	Shermie
+map	0
+coords	-30 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Joe
+map	0
+coords	380 220
+at	0
+
+spawn	Yashiro
+map	0
+coords	380 220
+at	0
+
+spawn	Ralf
+map	0
+coords	380 220
+at	0
+
+spawn	Shermie
+map	0
+coords	-30 220
+at	0
+
+spawn	K'
+map	0
+coords	380 220
+at	0
+
+spawn	Angel
+map	0
+coords	-30 220
+at	0
+
+spawn	Joe
+map	0
+coords	-30 220
+at	0
+
+
+

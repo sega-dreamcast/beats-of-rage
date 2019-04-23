@@ -1,0 +1,432 @@
+# Warehouse
+music		data/music/necktie.bor
+bossmusic	data/music/1boss.bor
+
+background	data/bgs/warehous/back.gif
+
+panel		data/bgs/warehous/p00.gif
+panel		data/bgs/warehous/p01.gif
+panel		data/bgs/warehous/p02.gif
+panel		data/bgs/warehous/p03.gif
+panel		data/bgs/warehous/p04.gif
+panel		data/bgs/warehous/p05.gif
+
+frontpanel	data/bgs/warehous/front.gif
+
+order	abcdefabcdefabcdefabcdefabcdefabcdef
+
+
+# ---------------------
+spawn	Crate
+item	Gold
+coords	380 230
+at	1
+
+spawn	Yashiro
+health	90
+coords	360 160
+at	1
+
+spawn	Yashiro
+map	2
+health	100
+coords	360 225
+at	1
+
+spawn	Shermie
+health	75
+coords	-30 160
+at	1
+
+spawn	Shermie
+map	2
+health	70
+coords	-30 230
+at	1
+
+
+spawn	Ralf
+map	2
+health	80
+coords	360 160
+at	300
+
+spawn	Ralf
+health	70
+coords	-30 160
+at	300
+
+spawn	Ralf
+health	80
+coords	380 225
+at	300
+
+spawn	K'
+health	70
+coords	388 190
+at	300
+
+wait
+at	600
+
+group	1 3
+at	600
+
+spawn	Angel
+health	150
+coords	-30 160
+at	600
+
+spawn	Angel
+map	2
+health	130
+coords	380 160
+at	600
+
+spawn	Shermie
+health	40
+coords	-30 220
+at	600
+
+spawn	Jhun
+alias	Ash
+coords	-30 200
+at	600
+
+spawn	Jhun
+alias	Burn
+map	1
+coords	380 200
+at	600
+
+#--------------------
+spawn	box
+flip	1
+item	Apple
+coords	380 170
+at	650
+
+
+group	100 100
+at	700
+
+spawn	Ralf
+health	80
+coords	380 160
+at	700
+
+spawn	Ralf
+map	3
+health	70
+coords	380 230
+at	700
+
+spawn	Yashiro
+health	90
+coords	-30 230
+at	700
+
+spawn	Yashiro
+health	90
+coords	-30 160
+at	700
+
+wait
+at	900
+
+spawn	Billy
+coords	380 160
+at	900
+
+spawn	Billy
+alias	Billi_Vanilli
+health	130
+map	1
+coords	380 220
+at	900
+
+#----------------
+group	100 100
+at	910
+
+spawn	Angel
+alias	Dawn
+health	120
+map	2
+coords	380 230
+at	980
+
+spawn	Angel
+alias	Dusk
+health	140
+map	3
+coords	380 170
+at	980
+
+spawn	K'
+health	70
+map	1
+coords	-30 210
+at	985
+
+spawn	K'
+health	70
+coords	-30 180
+at	985
+
+
+wait
+at	1300
+
+spawn	Joe
+alias	Dove
+map	3
+health	120
+coords	380 160
+at	1300
+
+spawn	Joe
+alias	Turkey
+map	2
+health	120
+coords	380 210
+at	1300
+
+spawn	Joe
+alias	Wren
+map	1
+health	120
+coords	-30 190
+at	1300
+
+spawn	Joe
+alias	Duck
+health	120
+coords	-30 230
+at	1300
+
+#---------------
+
+#group	100 100
+#at	1110
+
+
+
+
+
+#--boss-------
+
+spawn	box
+flip	1
+item	meat
+coords	375 161
+at	1310
+
+spawn	Crate
+flip	1
+2pitem	meat
+coords	390 160
+at	1350
+
+wait
+at	1500
+
+group	4 4
+at	1500
+
+spawn	Mrbig
+alias	Mr._Big
+health	400
+boss	1
+coords	380 200
+at	1500
+
+spawn	Ralf
+health	80
+coords	-30 160
+at	1300
+
+spawn	Yashiro
+alias	Henchman
+health	80
+map	3
+coords	380 230
+at	1300
+
+spawn	Angel
+health	100
+coords	-30 160
+at	1300
+
+spawn	Jhun
+map	1
+coords	380 160
+at	1300
+
+spawn	Joe
+health	100
+coords	380 160
+at	1300
+
+spawn	Ralf
+coords	-30 220
+at	1300
+
+spawn	Shermie
+health	50
+coords	380 200
+at	1300
+
+spawn	Angel
+map	2
+health	120
+coords	-30 230
+at	1300
+
+
+spawn	Jhun
+health	80
+coords	380 160
+at	1300
+
+spawn	Ralf
+health	80
+coords	380 160
+at	1300
+
+spawn	Yashiro
+alias	Henchman
+health	80
+map	3
+coords	380 230
+at	1300
+
+spawn	Angel
+health	100
+coords	-30 160
+at	1040
+
+spawn	Jhun
+map	1
+coords	380 160
+at	1040
+
+spawn	Ralf
+coords	-30 220
+at	1040
+
+spawn	Shermie
+health	50
+coords	380 200
+at	1040
+
+spawn	Angel
+map	2
+health	120
+coords	-30 230
+at	1040
+
+spawn	Joe
+health	100
+coords	380 160
+at	1040
+
+spawn	Jhun
+health	80
+coords	380 160
+at	1040
+
+spawn	Ralf
+health	80
+coords	-30 160
+at	1300
+
+spawn	Yashiro
+alias	Henchman
+health	80
+map	3
+coords	380 230
+at	1300
+
+spawn	Angel
+health	100
+coords	-30 160
+at	1300
+
+spawn	Jhun
+map	1
+coords	380 160
+at	1300
+
+spawn	Joe
+health	100
+coords	380 160
+at	1300
+
+spawn	Ralf
+coords	-30 220
+at	1300
+
+spawn	Shermie
+health	50
+coords	380 200
+at	1300
+
+spawn	Angel
+map	2
+health	120
+coords	-30 230
+at	1300
+
+
+spawn	Jhun
+health	80
+coords	380 160
+at	1300
+
+spawn	Ralf
+health	80
+coords	380 160
+at	1300
+
+spawn	Yashiro
+alias	Henchman
+health	80
+map	3
+coords	380 230
+at	1300
+
+spawn	Angel
+health	100
+coords	-30 160
+at	1040
+
+spawn	Jhun
+map	1
+coords	380 160
+at	1040
+
+spawn	Ralf
+coords	-30 220
+at	1040
+
+spawn	Shermie
+health	50
+coords	380 200
+at	1040
+
+spawn	Angel
+map	2
+health	120
+coords	-30 230
+at	1040
+
+spawn	Joe
+health	100
+coords	380 160
+at	1040
+
+spawn	Jhun
+health	80
+coords	380 160
+at	1040

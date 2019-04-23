@@ -1,0 +1,205 @@
+# Boat
+music		data/music/control.bor
+rock		1
+
+background	data/bgs/boat/back.gif
+
+panel		data/bgs/boat/p00.gif	none	data/bgs/boat/s00.gif
+panel		data/bgs/boat/p01.gif
+panel		data/bgs/boat/p02.gif	none	data/bgs/boat/s02.gif
+
+frontpanel	data/bgs/boat/front.gif
+
+order	abcabcabcabcabcabcabcabc
+
+
+# ---------------------
+group	100 100
+at	0
+
+spawn	Ralf
+alias	Rolf
+map	1
+coords	380 220
+at	10
+
+spawn	Ralf
+map	1
+coords	-30 220
+at	10
+
+spawn	Joe
+alias	Sparrow
+map	1
+health	150
+coords	380 220
+at	250
+
+spawn	Joe
+alias	Parrot
+map	2
+health	150
+coords	380 160
+at	250
+
+spawn	Joe
+alias	Stork
+map	3
+health	150
+coords	390 200
+at	250
+
+spawn	Box
+flip	1
+item	meat
+coords	380 161
+at	350
+
+spawn	Box
+flip	1
+2pitem	meat
+coords	450 160
+at	350
+
+spawn	Shermie
+coords	-30 230
+at	700
+
+spawn	Shermie
+map	2
+coords	380 230
+at	700
+
+spawn	Shermie
+coords	-30 170
+at	700
+
+spawn	K'
+coords	380 170
+at	900
+
+spawn	K'
+coords	380 230
+at	900
+
+spawn	Ralf
+coords	380 230
+at	1400
+
+spawn	Ralf
+alias	Matlock
+map	1
+coords	380 190
+at	1400
+
+wait
+at	1800
+
+group	2 2
+at	1200
+
+spawn	Angel
+map	3
+coords	-30 230
+at	1800
+
+spawn	Angel
+coords	-30 160
+at	1800
+
+spawn	Yashiro
+map	3
+coords	380 230
+at	1800
+
+spawn	Yashiro
+map	2
+coords	380 170
+at	1800
+
+spawn	Ralf
+coords	-30 220
+at	1800
+
+spawn	Ralf
+coords	-30 160
+at	1800
+
+group	3 3
+at	1800
+
+spawn	Shermie
+map	2
+coords	380 200
+at	1800
+
+spawn	Shermie
+coords	380 160
+at	1800
+
+spawn	Angel
+map	3
+coords	380 230
+at	1800
+
+spawn	K'
+map	3
+coords	-30 160
+at	1800
+
+spawn	K'
+map	1
+coords	-30 210
+at	1800
+
+spawn	K'
+map	2
+coords	-30 230
+at	1800
+
+#-----------------
+group	100 100
+at	1850
+
+spawn	Box
+flip	1
+item	apple
+coords	380 200
+at	1900
+
+spawn	Box
+flip	1
+item	apple
+coords	390 220
+at	1900
+
+spawn	Ralf
+map	1
+coords	380 160
+at	1900
+
+spawn	Yashiro
+map	1
+coords	380 180
+at	1910
+
+spawn	yashiro
+map	1
+coords	-30 160
+at	1910
+
+spawn	K'
+map	1
+coords	380 160
+at	2350
+
+spawn	K'
+coords	-30 160
+at	2350
+
+spawn	K'
+coords	-30 220
+at	2350
+
+wait
+at	2500

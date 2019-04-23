@@ -1,0 +1,419 @@
+# Pier
+music		data/music/scorcher.bor
+
+background	data/bgs/pier/back.gif
+water		data/bgs/pier/water.gif		2
+
+panel		data/bgs/pier/pier1.gif
+panel		data/bgs/pier/pier2.gif
+panel		data/bgs/pier/pier3.gif
+panel		data/bgs/pier/pier4.gif
+panel		data/bgs/pier/pier5.gif
+
+order	abcaacaabaacacaadeee
+
+
+# ---------------------
+
+group	100 100
+at	0
+
+spawn	Yashiro
+health	80
+map	1
+coords	-30 200
+at	20
+
+spawn	Yashiro
+health	80
+map	2
+coords	-30 160
+at	20
+
+spawn	Yashiro
+health	70
+coords	380 230
+at	22
+
+spawn	K'
+health	60
+coords	380 180
+at	22
+
+
+spawn	Ralf
+health	70
+map	1
+coords	380 170
+at	350
+
+spawn	Ralf
+health	70
+map	2
+coords	380 220
+at	350
+
+spawn	Shermie
+health	60
+map	3
+coords	-30 190
+at	350
+
+
+spawn	Angel
+health	120
+map	5
+coords	384 160
+at	680
+
+spawn	Angel
+alias	Devil
+health	130
+map	1
+coords	380 220
+at	680
+
+spawn	K'
+health	70
+map	1
+coords	370 190
+at	680
+
+spawn	K'
+health	60
+coords	-30 190
+at	680
+
+
+wait
+at	950
+
+group	3 3
+at	950
+
+spawn	Ralf
+health	70
+map	2
+coords	-30 160
+at	950
+
+spawn	Ralf
+health	70
+map	3
+coords	-30 230
+at	950
+
+spawn	Yashiro
+health	80
+map	2
+coords	370 195
+at	950
+
+spawn	Shermie
+health	60
+map	3
+coords	370 170
+at	950
+
+spawn	Shermie
+health	60
+coords	-30 220
+at	950
+
+spawn	Ralf
+health	70
+map	2
+coords	370 190
+at	950
+
+group	1 4
+at	950
+
+spawn	K'
+health	70
+coords	370 190
+at	950
+
+spawn	K'
+health	70
+map	1
+coords	370 210
+at	950
+
+spawn	Yashiro
+health	70
+map	2
+coords	-30 165
+at	950
+
+spawn	Ralf
+health	80
+map	2
+coords	-35 180
+at	950
+
+#---------------
+
+group	100 100
+at	1000
+
+spawn	Angel
+health	100
+map	4
+coords	370 170
+at	1050
+
+spawn	Angel
+health	100
+map	3
+coords	-30 200
+at	1050
+
+spawn	Angel
+health	100
+map	2
+coords	370 190
+at	1050
+
+
+spawn	Yashiro
+health	90
+map	2
+coords	370 230
+at	1400
+
+spawn	Yashiro
+health	80
+coords	370 195
+at	1400
+
+spawn	Shermie
+health	65
+map	2
+coords	-30 200
+at	1400
+
+spawn	K'
+health	75
+map	2
+coords	-30 170
+at	1400
+
+
+spawn	Yashiro
+health	80
+map	2
+coords	370 160
+at	1700
+
+spawn	Ralf
+health	80
+map	2
+coords	370 230
+at	1700
+
+spawn	Ralf
+health	80
+coords	-30 190
+at	1700
+
+spawn	box
+flip	1
+item	meat
+coords	380 161
+at	1760
+
+spawn	crate
+flip	1
+2pitem	meat
+coords	380 160
+at	1812
+
+
+wait
+at	1900
+
+group	1 3
+at	1900
+
+spawn	Angel
+health	120
+map	1
+coords	-30 195
+at	1900
+
+spawn	Ralf
+health	80
+map	1
+coords	-30 160
+at	1900
+
+spawn	Ralf
+health	80
+map	1
+coords	-30 230
+at	1900
+
+spawn	K'
+health	70
+map	1
+coords	370 195
+at	1900
+
+spawn	Biker-K'
+health	10
+coords	420 225
+at	1900
+
+spawn	Biker-K'
+health	10
+coords	-130 165
+at	1900
+
+#---------------
+
+group	100 100
+at	1950
+
+spawn	Ralf
+health	80
+map	1
+coords	370 195
+at	2000
+
+spawn	Ralf
+health	75
+coords	370 230
+at	2000
+
+spawn	Shermie
+health	60
+map	1
+coords	-30 165
+at	2000
+
+spawn	Angel
+health	120
+map	5
+coords	-30 225
+at	2000
+
+spawn	Ralf
+health	75
+map	2
+coords	380 160
+at	2000
+
+
+spawn	Jhun
+health	100
+coords	380 165
+at	2400
+
+spawn	Yashiro
+health	85
+coords	380 220
+at	2400
+
+spawn	crate
+flip	1
+item	money
+coords	380 161
+at	2410
+
+wait
+at	2700
+
+group	1 4
+at	2700
+
+spawn	Angel
+health	120
+coords	380 220
+at	2700
+
+spawn	Angel
+map	1
+health	120
+coords	-30 170
+at	2700
+
+spawn	Yashiro
+map	1
+health	85
+coords	380 230
+at	2700
+
+spawn	Yashiro
+map	3
+health	85
+coords	-30 210
+at	2700
+
+#----------------
+
+group	100 100
+at	2710
+
+spawn	K'
+health	70
+coords	380 160
+at	2750
+
+spawn	K'
+health	70
+coords	385 200
+at	2750
+
+spawn	K'
+map	1
+health	90
+coords	385 230
+at	2750
+
+spawn	Shermie
+map	1
+health	70
+coords	-30 180
+at	2750
+
+
+spawn	crate
+flip	1
+item	Meat
+coords	380 230
+at	3200
+
+spawn	crate
+flip	1
+2pitem	meat
+coords	380 229
+at	3240
+
+wait
+at	3350
+
+spawn	Shermie
+map	2
+health	70
+coords	385 210
+at	2750
+
+
+spawn	Jhun
+health	120
+coords	380 165
+at	3350
+
+spawn	Jhun
+alias	Guard
+health	150
+map	2
+coords	380 220
+at	3350
+
+spawn	Angel
+map	3
+health	100
+coords	385 190
+at	2750

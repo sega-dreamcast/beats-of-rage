@@ -1,0 +1,114 @@
+name	Ralf
+health	55
+speed	7
+type	enemy
+shadow	4
+icon	data/chars/ralf/icon.gif
+diesound data/sounds/die1.wav
+
+
+remap	data/chars/ralf/idle1.gif data/chars/ralf/map1.gif
+remap	data/chars/ralf/idle1.gif data/chars/ralf/map2.gif
+remap	data/chars/ralf/idle1.gif data/chars/ralf/map3.gif
+
+
+anim idle
+	loop	1
+	offset	39 121
+	bbox	22 23 34 99
+	delay	10
+	frame	data/chars/ralf/idle1.gif
+	frame	data/chars/ralf/idle2.gif
+	frame	data/chars/ralf/idle3.gif
+	frame	data/chars/ralf/idle4.gif
+	frame	data/chars/ralf/idle5.gif
+	frame	data/chars/ralf/idle6.gif
+
+anim walk
+	loop	1
+	offset	36 121
+	bbox	23 14 25 109
+	delay	8
+	frame	data/chars/ralf/walk01.gif
+	frame	data/chars/ralf/walk02.gif
+	frame	data/chars/ralf/walk03.gif
+	frame	data/chars/ralf/walk04.gif
+	frame	data/chars/ralf/walk05.gif
+	frame	data/chars/ralf/walk06.gif
+	frame	data/chars/ralf/walk07.gif
+	frame	data/chars/ralf/walk08.gif
+
+anim pain
+	loop	0
+	offset	36 109
+	bbox	15 15 33 96
+	delay	12
+	frame	data/chars/ralf/pain1.gif
+	delay	50
+	frame	data/chars/ralf/pain2.gif
+	delay	12
+	frame	data/chars/ralf/pain1.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	64 88
+	attack	48 14 25 62 15 1
+	frame	data/chars/ralf/fall1.gif
+	attack	47 21 30 51 15 1
+	frame	data/chars/ralf/fall2.gif
+	attack	25 58 77 20 15 1
+	frame	data/chars/ralf/fall3.gif
+	attack	18 70 105 21 15 1
+	frame	data/chars/ralf/fall4.gif
+
+anim rise
+	loop	0
+	delay	15
+	offset	65 80
+	frame	data/chars/ralf/rise1.gif
+	move	10
+	offset	75 80
+	frame	data/chars/ralf/rise2.gif
+	move	10
+	offset	85 80
+	frame	data/chars/ralf/rise3.gif
+
+
+anim attack1
+	range	0 70
+	loop	0
+	delay	7
+	offset	39 111
+	bbox	27 9 29 102
+	frame	data/chars/ralf/punch1.gif
+	attack	56 17 47 21 10
+	frame	data/chars/ralf/punch2.gif
+	delay	20
+	frame	data/chars/ralf/punch3.gif
+	delay	10
+	attack	0 0 0 0 0
+	frame	data/chars/ralf/punch1.gif
+	frame	data/chars/ralf/punch4.gif
+
+
+anim upper
+	loop	0
+	delay	10
+	offset	58 125
+	bbox	27 34 28 95
+	attack	50 54 25 19 15 0
+	move	30
+	frame	data/chars/ralf/upper1.gif
+	move	0
+	bbox	31 29 28 100
+	attack	55 30 18 39 15 1
+	frame	data/chars/ralf/upper2.gif
+	bbox	43 26 30 100
+	attack	40 8 32 37 15 1
+	frame	data/chars/ralf/upper3.gif
+	attack	0 0 0 0 0
+	delay	50
+	frame	data/chars/ralf/upper4.gif
+
+

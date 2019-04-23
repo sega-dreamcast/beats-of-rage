@@ -1,0 +1,186 @@
+name	Eiji
+health	60
+speed	12
+type	enemy
+shadow	4
+icon	data/chars/eiji/icon.gif
+diesound data/sounds/die2.wav
+
+
+#Important addition
+load	Star
+
+
+remap	data/chars/eiji/stand1.gif data/chars/eiji/alt1.gif
+remap	data/chars/eiji/stand1.gif data/chars/eiji/alt2.gif
+remap	data/chars/eiji/stand1.gif data/chars/eiji/alt3.gif
+remap	data/chars/eiji/stand1.gif data/chars/eiji/alt4.gif
+remap	data/chars/eiji/stand1.gif data/chars/eiji/alt5.gif
+remap	data/chars/eiji/stand1.gif data/chars/eiji/alt6.gif
+
+
+anim idle
+	loop	1
+	offset	32 98
+	bbox	19 17 32 81
+	delay	10
+	frame	data/chars/eiji/stand1.gif
+	frame	data/chars/eiji/stand2.gif
+	frame	data/chars/eiji/stand3.gif
+	frame	data/chars/eiji/stand4.gif
+	frame	data/chars/eiji/stand5.gif
+	frame	data/chars/eiji/stand6.gif
+
+anim walk
+	loop	1
+	offset	35 103
+	bbox	22 16 28 88
+	delay	7
+	frame	data/chars/eiji/walk1.gif
+	frame	data/chars/eiji/walk2.gif
+	frame	data/chars/eiji/walk3.gif
+	frame	data/chars/eiji/walk4.gif
+	frame	data/chars/eiji/walk3.gif
+	frame	data/chars/eiji/walk2.gif
+
+anim pain
+	loop	0
+	offset	35 88
+	bbox	13 6 40 84
+	delay	12
+	frame	data/chars/eiji/pain1.gif
+	delay	45
+	frame	data/chars/eiji/pain2.gif
+	delay	12
+	frame	data/chars/eiji/pain1.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	58 82
+	attack	39 7 30 57 15 1
+	frame	data/chars/eiji/fall1.gif
+	attack	16 36 69 26 15 1
+	frame	data/chars/eiji/fall2.gif
+	attack	10 47 69 26 15 1
+	frame	data/chars/eiji/fall3.gif
+	attack	13 59 69 26 15 1
+	frame	data/chars/eiji/fall4.gif
+
+anim rise
+	loop	0
+	offset	41 83
+	delay	15
+	frame	data/chars/eiji/rise1.gif
+	frame	data/chars/eiji/rise2.gif
+	frame	data/chars/eiji/rise3.gif
+
+
+anim attack1
+	loop	0
+	delay	7
+	offset	33 98
+	bbox	25 13 28 84
+	frame	data/chars/eiji/punch1.gif
+	frame	data/chars/eiji/punch2.gif
+	attack	55 14 46 13 10
+	frame	data/chars/eiji/punch3.gif
+	frame	data/chars/eiji/punch4.gif
+	attack	0 0 0 0 0
+	frame	data/chars/eiji/punch2.gif
+	frame	data/chars/eiji/punch1.gif
+
+
+
+
+
+anim jumpattack
+	loop	0
+	delay	7
+	offset	34 135
+
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump00.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump01.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump00.gif
+	bbox	24 24 40 74
+	frame	data/chars/eiji/jump02.gif
+	bbox	24 27 42 71
+	frame	data/chars/eiji/jump03.gif
+
+	delay	10
+	bbox	20 27 42 71
+	frame	data/chars/eiji/dart00.gif
+	delay	20
+	bbox	20 27 42 71
+	attack	56 46 36 28 10 1
+	frame	data/chars/eiji/dart01.gif
+	delay	7
+
+	bbox	24 27 42 71
+	frame	data/chars/eiji/jump03.gif
+	bbox	24 24 40 74
+	frame	data/chars/eiji/jump02.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump00.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump01.gif
+
+	bbox	
+	frame	data/chars/eiji/land00.gif
+	bbox	
+	frame	data/chars/eiji/land01.gif
+	bbox	
+	frame	data/chars/eiji/land02.gif
+
+
+
+
+anim jumpattack2
+	loop	0
+	delay	7
+	offset	34 135
+	throwframe	6
+
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump00.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump01.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump00.gif
+	bbox	24 24 40 74
+	frame	data/chars/eiji/jump02.gif
+	bbox	24 27 42 71
+	frame	data/chars/eiji/jump03.gif
+
+	delay	10
+	bbox	20 27 42 71
+	frame	data/chars/eiji/dart00.gif
+	delay	20
+	bbox	20 27 42 71
+	attack	56 46 36 28 10 1
+	frame	data/chars/eiji/dart01.gif
+	delay	7
+
+	bbox	24 27 42 71
+	frame	data/chars/eiji/jump03.gif
+	bbox	24 24 40 74
+	frame	data/chars/eiji/jump02.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump00.gif
+	bbox	24 19 38 92
+	frame	data/chars/eiji/jump01.gif
+
+	bbox	
+	frame	data/chars/eiji/land00.gif
+	bbox	
+	frame	data/chars/eiji/land01.gif
+	bbox	
+	frame	data/chars/eiji/land02.gif
+
+
+
+
+

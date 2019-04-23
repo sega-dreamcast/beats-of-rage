@@ -1,0 +1,665 @@
+# Hotel
+music		data/music/trick.bor
+
+# Load images
+background	data/bgs/hotel/back.gif
+
+# Front layer
+frontpanel	data/bgs/hotel/f00.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/hotel/p00.gif		none		none
+panel		data/bgs/hotel/p01.gif		none		none
+panel		data/bgs/hotel/p02.gif		none		none
+panel		data/bgs/hotel/p03.gif		none		none
+panel		data/bgs/hotel/p_mirror.gif	none		data/bgs/hotel/s_mirror.gif
+panel		data/bgs/hotel/p04.gif		none		none
+panel		data/bgs/hotel/p05.gif		none		none
+panel		data/bgs/hotel/p06.gif		none		none
+
+order		acbfghabeeeadfeeeghabcdfgh
+
+
+direction	left
+mirror		1
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+spawn	1up
+coords	270 230
+at	0
+
+spawn	shermie
+map	2
+health	50
+coords	-30 165
+at	10
+
+#spawn	Jhun
+#map	1
+#health	120
+#coords	-30 225
+#at	10
+
+spawn	Yashiro
+map	2
+health	70
+coords	380 195
+at	10
+
+spawn	Yashiro
+map	3
+health	75
+coords	-30 200
+at	10
+
+
+spawn	Ralf
+map	2
+health	70
+coords	-30 165
+at	380
+
+spawn	Ralf
+map	3
+health	70
+coords	-30 230
+at	380
+
+#spawn	Ralf
+#map	1
+#health	80
+#coords	380 195
+#at	380
+
+spawn	Angel
+map	4
+health	85
+coords	-30 210
+at	390
+
+wait
+at	400
+
+#-------------
+
+spawn	Angel
+map	3
+health	90
+coords	-30 210
+at	450
+
+spawn	Angel
+alias	Natasha
+map	2
+health	100
+coords	-30 170
+at	450
+
+spawn	Angel
+map	1
+health	90
+coords	380 210
+at	455
+
+#spawn	Billy
+#map	4
+#health	100
+#coords	380 195
+#at	455
+
+wait
+at	550
+
+#----------------
+
+group	2 2
+at	800
+
+spawn	Yamazaki
+health	160
+coords	-30 195
+at	800
+
+wait
+at	840
+
+spawn	Angel
+map	1
+health	80
+coords	380 210
+at	840
+
+spawn	K'
+map	1
+health	70
+coords	-30 160
+at	840
+
+spawn	Ralf
+health	70
+coords	-30 180
+at	840
+
+#spawn	Yashiro
+#map	1
+#health	80
+#coords	380 230
+#at	840
+
+#--------------------
+
+group	100 100
+at	850
+
+spawn	Trolly
+item	meat
+coords	-40 161
+at	900
+
+spawn	Trolly
+2pitem	meat
+coords	-40 160
+at	950
+
+spawn	Shermie
+map	2
+health	60
+coords	380 195
+at	950
+
+spawn	Shermie
+map	1
+health	60
+coords	-30 200
+at	950
+
+spawn	Ralf
+health	70
+coords	-30 220
+at	950
+
+wait
+at	1000
+
+#----------------
+
+wait
+at	1200
+
+group	1 4
+at	1200
+
+spawn	K'
+health	65
+coords	-30 220
+at	1200
+
+spawn	K'
+health	65
+map	1
+coords	-32 210
+at	1200
+
+spawn	K'
+health	65
+coords	-34 200
+at	1200
+
+spawn	K'
+health	65
+coords	-36 190
+at	1200
+
+#spawn	K'
+#health	65
+#map	1
+#coords	-38 180
+#at	1200
+
+
+spawn	Yashiro
+health	80
+map	1
+coords	380 160
+at	1200
+
+spawn	Yashiro
+health	80
+coords	380 170
+at	1200
+
+spawn	Yashiro
+health	80
+map	2
+coords	380 180
+at	1200
+
+spawn	Yashiro
+health	80
+map	3
+coords	380 190
+at	1200
+
+#spawn	Yashiro
+#health	80
+#map	2
+#coords	380 200
+#at	1200
+
+#------------------
+
+group	2 3
+at	1400
+
+wait
+at	1450
+
+spawn	Heavy
+alias	Viper
+health	200
+map	1
+coords	-30 195
+at	1450
+
+#spawn	Angel
+#health	120
+#map	2
+#coords	-30 160
+#at	1450
+
+spawn	Ralf
+health	70
+map	2
+coords	-30 230
+at	1450
+
+spawn	Billy
+health	90
+map	2
+coords	380 200
+at	1200
+
+spawn	Yashiro
+health	75
+map	3
+coords	380 200
+at	1450
+
+#--------------
+
+group	100 100
+at	1460
+
+spawn	Trolly
+item	meat
+coords	-40 181
+at	1460
+
+spawn	Trolly
+2pitem	meat
+coords	-40 200
+at	1500
+
+spawn	Yashiro
+health	80
+map	3
+coords	380 200
+at	1500
+
+spawn	Angel
+health	90
+map	1
+coords	-30 160
+at	1500
+
+spawn	Angel
+health	100
+map	3
+coords	-30 230
+at	1500
+
+
+spawn	Shermie
+health	55
+map	3
+coords	-30 195
+at	1800
+
+spawn	Shermie
+alias	Public_enemy_no_1
+health	90
+map	1
+coords	-30 160
+at	1800
+
+spawn	Ralf
+health	70
+coords	380 195
+at	1800
+
+#spawn	Ralf
+#health	80
+#map	1
+#coords	380 160
+#at	1800
+
+wait
+at	1820
+
+#-------------
+
+group	3 3
+at	2000
+
+wait
+at	2000
+
+#spawn	Joe
+#alias	Tweety
+#health	110
+#coords	-30 195
+#at	2000
+
+spawn	Joe
+alias	Ikaruga
+map	1
+health	110
+coords	-30 160
+at	2000
+
+spawn	Joe
+alias	Owl
+map	2
+health	110
+coords	380 230
+at	2000
+
+#spawn	Joe
+#alias	Mosquito
+#map	3
+#health	130
+#coords	-30 195
+#at	2000
+
+spawn	Joe
+alias	Rooster
+health	110
+coords	-30 180
+at	2000
+
+spawn	Joe
+alias	Chicken
+map	3
+health	110
+coords	380 220
+at	2000
+
+spawn	Joe
+alias	Raven
+map	2
+health	110
+coords	380 200
+at	2000
+
+#--------------------
+
+group	3 3
+at	2050
+
+wait
+at	2250
+
+spawn	Robert
+alias	Seagull
+map	1
+health	200
+coords	-30 210
+at	2250
+
+spawn	Ralf
+alias	Sven
+map	2
+health	70
+coords	380 160
+at	2250
+
+spawn	Shermie
+map	1
+health	60
+coords	380 200
+at	2250
+
+spawn	Ralf
+map	3
+health	70
+coords	-30 200
+at	2250
+
+#spawn	Joe
+#alias	Birdy
+#map	2
+#health	90
+#coords	-30 170
+#at	2250
+
+#-------------------
+
+group	100 100
+at	2260
+
+spawn	Trolly
+item	meat
+coords	-40 161
+at	2260
+
+spawn	Trolly
+2pitem	meat
+coords	-40 160
+at	2300
+
+spawn	Jhun
+map	2
+health	90
+coords	-30 170
+at	2400
+
+spawn	Jhun
+map	1
+health	100
+coords	-30 230
+at	2400
+
+spawn	Billy
+map	2
+health	90
+coords	380 180
+at	2400
+
+#spawn	Billy
+#alias	Duke
+#map	1
+#health	110
+#coords	380 220
+#at	2400
+
+wait
+at	2550
+
+#-----------
+
+group	3 3
+at	2560
+
+wait
+at	2800
+
+spawn	MrBig
+alias	Gert_Stauner
+map	1
+health	200
+coords	380 220
+at	2800
+
+spawn	Angel
+map	4
+health	100
+coords	380 170
+at	2800
+
+#spawn	Angel
+#health	110
+#coords	-30 170
+#at	2800
+
+spawn	K'
+alias	Lewis
+health	70
+coords	-30 170
+at	2800
+
+spawn	Yashiro
+map	3
+health	75
+coords	380 170
+at	2800
+
+#-----------------
+
+group	100 100
+at	2810
+
+spawn	Trolly
+item	apple
+coords	-40 161
+at	2820
+
+spawn	Trolly
+2pitem	apple
+coords	-40 180
+at	2840
+
+spawn	Yashiro
+health	70
+coords	-30 170
+at	2900
+
+spawn	Yashiro
+map	1
+health	75
+coords	-30 220
+at	2900
+
+spawn	Ralf
+map	1
+health	75
+coords	-30 190
+at	2900
+
+
+#spawn	Eiji
+#alias	Cats
+#map	1
+#health	150
+#coords	-30 170
+#at	3300
+
+spawn	Eiji
+alias	Kazuma
+map	2
+health	120
+coords	-30 200
+at	3300
+
+spawn	Eiji
+alias	Ginjuro
+map	3
+health	120
+coords	380 230
+at	3310
+
+wait
+at	3400
+
+#--------------------------
+
+group	3 3
+at	3410
+
+wait
+at	3700
+
+spawn	K9999
+alias	Tetsuo
+map	1
+health	200
+coords	-30 195
+at	3700
+
+
+spawn	Ralf
+map	3
+health	75
+coords	380 180
+at	3700
+
+spawn	Yashiro
+map	3
+health	70
+coords	380 210
+at	3700
+
+#spawn	Eiji
+#map	4
+#health	80
+#coords	-30 170
+#at	3700
+
+spawn	Shermie
+health	70
+coords	-30 215
+at	3700
+
+#-----------
+
+# En dan nu: Mr. Y......
+

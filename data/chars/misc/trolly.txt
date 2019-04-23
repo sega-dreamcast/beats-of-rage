@@ -1,0 +1,21 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Trolly
+health	1
+type	obstacle
+shadow	0
+icon	data/chars/misc/carticon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	delay	1000
+	offset	34 60
+	bbox	2 -22 62 85
+	frame	data/chars/misc/cart.gif
+
+anim fall
+	delay	1000
+	offset	34 60
+	frame	data/chars/misc/cart-hit.gif

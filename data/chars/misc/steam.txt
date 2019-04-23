@@ -1,0 +1,20 @@
+name	Steam
+type	none
+shadow	0
+
+anim idle
+	loop	0
+	delay	10
+	offset	50 50
+	frame	data/chars/misc/steam00.gif
+	frame	data/chars/misc/steam01.gif
+	frame	data/chars/misc/steam02.gif
+	frame	data/chars/misc/steam03.gif
+	frame	data/chars/misc/steam04.gif
+	frame	data/chars/misc/steam05.gif
+	frame	data/chars/misc/steam06.gif
+	frame	data/chars/misc/steam07.gif
+	frame	data/chars/misc/steam08.gif
+	frame	data/chars/misc/steam09.gif
+	frame	data/chars/misc/steam10.gif
+

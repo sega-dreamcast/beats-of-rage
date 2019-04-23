@@ -1,0 +1,142 @@
+name	Joe
+health	100
+speed	12
+type	enemy
+shadow	4
+icon	data/chars/joe/icon.gif
+diesound data/sounds/die1.wav
+
+
+remap	data/chars/joe/idle1.gif data/chars/joe/alt1.gif
+remap	data/chars/joe/idle1.gif data/chars/joe/alt2.gif
+remap	data/chars/joe/idle1.gif data/chars/joe/alt3.gif
+
+
+anim idle
+	loop	1
+	offset	29 107
+	bbox	14 7 26 100
+	delay	10
+	frame	data/chars/joe/idle1.gif
+	frame	data/chars/joe/idle2.gif
+	frame	data/chars/joe/idle3.gif
+	frame	data/chars/joe/idle4.gif
+	frame	data/chars/joe/idle5.gif
+	frame	data/chars/joe/idle6.gif
+	frame	data/chars/joe/idle5.gif
+	frame	data/chars/joe/idle4.gif
+	frame	data/chars/joe/idle3.gif
+	frame	data/chars/joe/idle2.gif
+
+anim walk
+	loop	1
+	offset	43 124
+	bbox	27 21 30 103
+	delay	10
+	frame	data/chars/joe/walk1.gif
+	frame	data/chars/joe/walk2.gif
+	frame	data/chars/joe/walk3.gif
+	frame	data/chars/joe/walk4.gif
+	frame	data/chars/joe/walk5.gif
+	frame	data/chars/joe/walk6.gif
+	frame	data/chars/joe/walk7.gif
+
+anim pain
+	loop	0
+	offset	26 101
+	bbox	3 3 39 98
+	delay	5
+	frame	data/chars/joe/pain1.gif
+	frame	data/chars/joe/pain2.gif
+	delay	40
+	frame	data/chars/joe/pain3.gif
+	delay	5
+	frame	data/chars/joe/pain2.gif
+	frame	data/chars/joe/pain1.gif
+
+anim fall
+	loop	0
+	offset	69 94
+	delay	10
+	attack	51 9 44 49 15 1
+	frame	data/chars/joe/fall1.gif
+	attack	42 17 54 34 15 1
+	frame	data/chars/joe/fall2.gif
+	attack	32 50 78 30 15 1
+	frame	data/chars/joe/fall3.gif
+	attack	30 76 78 24 15 1
+	frame	data/chars/joe/fall4.gif
+
+anim rise
+	loop	0
+	offset	62 97
+	delay	20
+	frame	data/chars/joe/rise1.gif
+	frame	data/chars/joe/rise2.gif
+	frame	data/chars/joe/rise3.gif
+	frame	data/chars/joe/rise4.gif
+	frame	data/chars/joe/rise5.gif
+
+
+anim attack1
+	loop	0
+	offset	38 117
+	delay	5
+	bbox	47 23 25 95
+	frame	data/chars/joe/kick01.gif
+	frame	data/chars/joe/kick02.gif
+	frame	data/chars/joe/kick03.gif
+	attack	83 33 62 29 18
+	frame	data/chars/joe/kick04.gif
+	bbox	56 11 25 107
+	frame	data/chars/joe/kick05.gif
+	attack	0 0 0 0 0
+	frame	data/chars/joe/kick06.gif
+	bbox	66 15 25 103
+	frame	data/chars/joe/kick07.gif
+	frame	data/chars/joe/kick08.gif
+	frame	data/chars/joe/kick09.gif
+	bbox	50 15 25 103
+	frame	data/chars/joe/kick10.gif
+	bbox	38 15 25 103
+	frame	data/chars/joe/kick11.gif
+
+
+
+anim grab
+	loop	0
+	offset	40 121
+	bbox	39 20 21 102
+	delay	12
+	frame	data/chars/joe/grab00.gif
+	frame	data/chars/joe/grab03.gif
+	attack	68 40 33 33 2
+	frame	data/chars/joe/grab04.gif
+	attack	0
+	frame	data/chars/joe/grab03.gif
+	frame	data/chars/joe/grab00.gif
+	frame	data/chars/joe/grab03.gif
+	attack	68 40 33 33 4
+	frame	data/chars/joe/grab04.gif
+	attack	0
+	frame	data/chars/joe/grab03.gif
+	frame	data/chars/joe/grab00.gif
+	frame	data/chars/joe/grab03.gif
+	attack	68 40 33 33 8
+	frame	data/chars/joe/grab04.gif
+	attack	0
+	frame	data/chars/joe/grab03.gif
+	frame	data/chars/joe/grab00.gif
+	delay	20
+	frame	data/chars/joe/grab07.gif
+	delay	12
+	bbox	44 13 28 110
+	attack	63 32 33 33 12 1
+	frame	data/chars/joe/grab08.gif
+	frame	data/chars/joe/grab09.gif
+	attack	0
+	bbox	36 13 28 110
+	frame	data/chars/joe/grab10.gif
+
+
+
