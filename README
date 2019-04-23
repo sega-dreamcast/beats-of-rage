@@ -1,9 +1,0 @@
------------------------------------------------------------------------------
-Beats of Rage 1.0028
-Dreamcast toolchain by L@ Cible (2004)
------------------------------------------------------------------------------
-
-this archive contain all needed tools for build BOR Dreamcast binary under Windows :
- ./src : BOR source code with rumble feature and PAL support 
- ./sh-elf : the SH4 compiler (GCC v3.0.4 build under mingwin)
-  
