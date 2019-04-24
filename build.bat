@@ -1,5 +1,6 @@
 @echo off
-title Beats of Rage Rumble Edition for Sega Dreamcast: Build
+set TITLE=Beats of Rage Rumble Edition for Sega Dreamcast
+title %TITLE%: Build
 
 set SCRIPT_PATH=%~dp0
 set SCRIPT_PATH=%SCRIPT_PATH:~0,-1%
@@ -8,6 +9,9 @@ set BORPAK=%SCRIPT_PATH%\sdk\opt\borpak.exe
 set CDROOT_PATH=%SCRIPT_PATH%\cd_root
 cd src\bor
 
+goto print_logo
+
+:startup
 if not exist %CDROOT_PATH%\IP.BIN goto err_bootstrap
 if not exist %CDROOT_PATH%\1ST_READ.BIN goto err_bootfile
 
@@ -36,7 +40,7 @@ goto finalize
 
 :finalize
 echo.
-echo Done!
+echo Your %TITLE% is now ready!
 goto end
 
 :err_bootfile
@@ -47,6 +51,24 @@ goto end
 :err_bootstrap
 echo No bootstrap file (IP.BIN) was found!
 goto end
+
+:print_logo                                                      
+echo  ______  ______         ____     ___________         
+echo  \     \^|\     \    ____\_  \__  \          \        
+echo   ^|     ^|\^|     ^|  /     /     \  \    /\    \       
+echo   ^|     ^|/____ /  /     /\      ^|  ^|   \_\    ^|      
+echo   ^|     ^|\     \ ^|     ^|  ^|     ^|  ^|      ___/       
+echo   ^|     ^| ^|     ^|^|     ^|  ^|     ^|  ^|      \  ____    
+echo   ^|     ^| ^|     ^|^|     ^| /     /^| /     /\ \/    \   
+echo  /_____/^|/_____/^|^|\     \_____/ ^|/_____/ ^|\______^|   
+echo  ^|    ^|^|^|     ^| ^|^| \_____\   ^| / ^|     ^| ^| ^|     ^|   
+echo  ^|____^|/^|_____^|/  \ ^|    ^|___^|/  ^|_____^|/ \^|_____^|   
+echo                    \^|____^|                           
+echo.
+echo %TITLE%
+echo ---
+echo.
+goto startup
 
 :end
 pause

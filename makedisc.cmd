@@ -12,7 +12,7 @@ set CDI4DC=%SCRIPT_PATH%\sdk\bin\cdi4dc.exe
 if exist %OUTPUT_FILE% del %OUTPUT_FILE%
 if exist %DATA_FILE% del %DATA_FILE%
 
-%MKISOFS% -V BEATS_OF_RAGE -G cd_root\IP.BIN -sysid "SEGA SEGAKATANA" -publisher "SENILE TEAM" -preparer "CDI4DC 0.3b" -appid "BEATS OF RAGE" -duplicates-once -l -o %DATA_FILE% cd_root
+%MKISOFS% -V BOR_RUMBLE_EDITION -G cd_root\IP.BIN -sysid "SEGA SEGAKATANA" -publisher "SENILE TEAM" -preparer "CDI4DC 0.3b" -appid "BEATS OF RAGE RUMBLE EDITION" -duplicates-once -sort sortfile.str -hide DISC_ID.TXT -l -o %DATA_FILE% cd_root
 %CDI4DC% %DATA_FILE% %OUTPUT_FILE% -d
 if exist %DATA_FILE% del %DATA_FILE%
 
