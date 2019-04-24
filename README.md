@@ -6,7 +6,7 @@
 
 This repository contains the original **Beats of Rage** source code for the **Sega Dreamcast** console, in its final form. The **Rumble Edition**, specific to the Sega Dreamcast, was released the **October 21, 2004**.
 
-This special edition, in addition with rumble features also includes a broadcast selector, in order to choose between **NTSC** or **PAL** at startup. By default, the NTSC (best) version is used, but if needed (mainly if you have an European Dreamcast without a VGA cable attached), the startup loader will let you choose to run the game on PAL or NTSC broadcast signal, depending of your choice. The original **Beats of Rage** game engine was only available on NTSC broadcast version only.
+This special edition, in addition with rumble features also includes a broadcast selector, in order to choose between **NTSC** or **PAL** at startup. By default, the NTSC (best) version is used, but if needed (mainly if you have an European Dreamcast without a VGA cable attached), the startup loader will let you choose to run the game on PAL or NTSC broadcast signal, depending of your choice. The original **Beats of Rage** game engine was only available on NTSC broadcast version.
 
 This repository was created only for historical purpose, as [OpenBoR](https://github.com/sega-dreamcast/openbor/) is the newer and better alternative to run **Beats of Rage** games on the Sega Dreamcast, so you should use [OpenBoR](https://github.com/sega-dreamcast/openbor/). Meanwhile, if you want to play the original **Beats of Rage** game and that you aren't interested about developing your own mods, then you are on the right place as you may download here the best release of the **Beats of Rage** game for the **Sega Dreamcast**.
 
